@@ -1,8 +1,12 @@
 import React from 'react'
+import Link from 'next/link'
 
 const cv = () => {
   return (
-    <div>cv</div>
+    <main>
+        <div>cv</div>
+        <Link href="/">Home</Link>
+    </main>
   )
 }
 

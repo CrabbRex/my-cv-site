@@ -1,8 +1,12 @@
 import React from 'react'
+import Link from 'next/link'
 
 const about = () => {
   return (
-    <div>about</div>
+    <main>
+      <div>about</div>
+      <Link href="/">Home</Link>
+    </main>
   )
 }
 

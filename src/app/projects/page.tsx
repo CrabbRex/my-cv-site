@@ -1,8 +1,12 @@
 import React from 'react'
+import Link from 'next/link'
 
 const projects = () => {
   return (
-    <div>projects</div>
+    <main>
+        <div>projects</div>
+        <Link href="/">Home</Link>
+    </main>
   )
 }
 
