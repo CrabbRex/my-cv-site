@@ -16,12 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header style={{ marginBottom: '2rem' }}>
-          <nav>
-            <Link href="/">Home</Link> |{' '}
-            <Link href="/projects">Projects</Link> |{' '}
-            <Link href="/cv">CV</Link> |{' '}
-            <Link href="/about">About</Link>
+        <header className="bg-white shadow-md mb-8">
+          <nav className="flex gap-4 p-4 justify-center">
+            <Link href="/" className="px-3 py-1 rounded transition hover:outline-2 hover:outline-white">Home</Link>
+            <Link href="/projects" className="px-3 py-1 rounded transition hover:outline-2 hover:outline-white">Projects</Link>
+            <Link href="/cv" className="px-3 py-1 rounded transition hover:outline-2 hover:outline-white">CV</Link>
+            <Link href="/about" className="px-3 py-1 rounded transition hover:outline-2 hover:outline-white">About</Link>
           </nav>
         </header>
         {children}
