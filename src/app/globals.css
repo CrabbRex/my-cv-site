@@ -5,7 +5,7 @@
   --color-secondary: #153801;
   --color-highlight: #F7C948;
 
-  --color-background: #FEFCFD;
+  --color-background: #f8f3f6;
   --color-surface: #E5E5E3;
   --color-foreground: #000000;
 
@@ -28,7 +28,6 @@ body {
 
 header {
   background: transparent;
-  color: white;
   padding: 1rem;
   text-align: center;
 }

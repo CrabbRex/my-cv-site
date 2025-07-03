@@ -25,13 +25,14 @@ export default function RootLayout({
         >
           <header className="bg-white dark:bg-black shadow-md mb-8">
            
-            <nav className="flex gap-4 p-4 justify-center">
+            <nav className="flex gap-4 p-4 justify-center relative">
               
-              <ThemeSwitcher />
+              
               <Link href="/" className="px-3 py-1 rounded transition hover:outline-2 hover:outline-white">Home</Link>
               <Link href="/projects" className="px-3 py-1 rounded transition hover:outline-2 hover:outline-white">Projects</Link>
               <Link href="/cv" className="px-3 py-1 rounded transition hover:outline-2 hover:outline-white">CV</Link>
               <Link href="/about" className="px-3 py-1 rounded transition hover:outline-2 hover:outline-white">About</Link>
+              <ThemeSwitcher />
             </nav>
           </header>
           
