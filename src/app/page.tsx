@@ -7,8 +7,8 @@ export default function Home() {
     <main className="flex h-screen">
       {/* Left Side - Text Box */}
       <section className="w-1/2 flex items-center justify-center bg-[var(--color-background)] p-12 overflow-auto">
-        <div className="max-w-md text-left bg-[var(--color-highlight)] text[var(--color-secondary)] rounded-2x1 p-10 shadow-lg">
-          <h1 className="text-4x1 font-bold mb-4">Hello, I’m Rex Crabb</h1>
+        <div className="max-w-md text-left bg-[var(--color-box)] text-[var(--color-secondary)] rounded-md p-10 shadow-lg">
+          <h1 className="text-4xl font-bold mb-4">Hello, I’m Rex Crabb</h1>
           <p className="text-lg">
             I am a motivated and resilient Information Technology student with a strong academic record and
             growing portfolio of personal and academic web development projects.
