@@ -24,11 +24,11 @@ export default function RootLayout({
           enableSystem={true}
         >
           <header className="bg-white dark:bg-black">
-            <nav className="flex gap-4 justify-center relative">
-              <Link href="/" className="px-3 py-1 rounded transition hover:outline-2 hover:bg-[var(--color-box-hover)">Home</Link>
-              <Link href="/projects" className="px-3 py-1 rounded transition hover:outline-2 hover:bg-[var(--color-box-hover)">Projects</Link>
-              <Link href="/cv" className="px-3 py-1 rounded transition hover:outline-2 hover:bg-[var(--color-box-hover)">CV</Link>
-              <Link href="/about" className="px-3 py-1 rounded transition hover:outline-2 hover:bg-[var(--color-box-hover)">About</Link>
+            <nav className="flex gap-4 justify-center relative pt-4">
+              <Link href="/" className="px-3 py-1 rounded-4xl transition border-2 hover:border-transparent hover:bg-[var(--color-background)]">Home</Link>
+              <Link href="/projects" className="px-3 py-1 rounded-4xl transition border-2 hover:border-transparent hover:bg-[var(--color-box-hover)">Projects</Link>
+              <Link href="/cv" className="px-3 py-1 rounded-4xl transition border-2 hover:border-transparent hover:bg-[var(--color-box-hover)">CV</Link>
+              <Link href="/about" className="px-3 py-1 rounded-4xl transition border-2 hover:border-transparent hover:bg-[var(--color-box-hover)">About</Link>
               <ThemeSwitcher />
             </nav>
           </header>
