@@ -14,8 +14,8 @@
 }
 
 .dark {
-    --color-background: #89CFF0;
-    --color-foreground: darkgrey;
+    --color-background: #373939;
+    --color-foreground: rgb(255, 255, 255);
 }
 
 
@@ -28,6 +28,6 @@ body {
 
 header {
   background: transparent;
-  padding: 1rem;
+  padding: 0.2rem;
   text-align: center;
 }
