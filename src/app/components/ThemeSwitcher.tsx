@@ -49,7 +49,7 @@ export default function ThemeSwitcher() {
   return (
     <button
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="p-2 rounded-4xl bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100 absolute right-4 top-4"
+      className="fixed p-2 rounded-4xl bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100 absolute right-4 top-4"
       
     >
       {theme === 'dark' ? sunIcon : moonIcon}

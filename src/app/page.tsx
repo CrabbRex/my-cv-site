@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="flex h-screen">
+    <main className="flex h-screen pt-20">
       {/* Left Side - Text Box */}
       <section className="w-1/2 flex items-center justify-center bg-[var(--color-background)] p-12 overflow-auto">
         <div className="max-w-md min-h-[60%] text-left bg-[var(--color-box)] text-[var(--color-secondary)] rounded-md p-10 [box-shadow:10px_10px_20px_rgba(0,0,0,0.25)]">

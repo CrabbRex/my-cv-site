@@ -17,14 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>
+      <body className="relative">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem={true}
         >
-          <header className="bg-white dark:bg-black">
-            <nav className="flex gap-4 justify-center relative pt-4">
+          <header className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-black">
+            <nav className="max-w-5xl mx-auto flex gap-4 justify-center pt-4">
               <Link href="/" className="px-3 py-1 rounded-4xl transition border-2 hover:border-transparent hover:bg-[var(--color-background)]">Home</Link>
               <Link href="/projects" className="px-3 py-1 rounded-4xl transition border-2 hover:border-transparent hover:bg-[var(--color-box-hover)">Projects</Link>
               <Link href="/cv" className="px-3 py-1 rounded-4xl transition border-2 hover:border-transparent hover:bg-[var(--color-box-hover)">CV</Link>
