@@ -4,6 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import ThemeProvider from "./utils/ThemeProvider";
 import ThemeSwitcher from "./components/ThemeSwitcher";
+import Navbar from "./components/navbar";
 
 export const metadata: Metadata = {
   title: 'My CV',
@@ -23,17 +24,9 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem={true}
         >
-          <header className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-black">
-            <nav className="max-w-5xl mx-auto flex gap-4 justify-center pt-4">
-              <Link href="/" className="px-3 py-1 rounded-4xl transition border-2 hover:border-transparent hover:bg-[var(--color-background)]">Home</Link>
-              <Link href="/projects" className="px-3 py-1 rounded-4xl transition border-2 hover:border-transparent hover:bg-[var(--color-box-hover)">Projects</Link>
-              <Link href="/cv" className="px-3 py-1 rounded-4xl transition border-2 hover:border-transparent hover:bg-[var(--color-box-hover)">CV</Link>
-              <Link href="/about" className="px-3 py-1 rounded-4xl transition border-2 hover:border-transparent hover:bg-[var(--color-box-hover)">About</Link>
-              <ThemeSwitcher />
-            </nav>
-          </header>
-          
-          {children}
+        <Navbar />
+        <ThemeSwitcher />
+        {children}
           
         </ThemeProvider>
       </body>
