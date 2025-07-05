@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import LinkSVG from '../components/LinkSVG';
 
 const cv = () => {
   return (
@@ -60,7 +61,7 @@ const cv = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold">Macquarie University</h3>
-                  <p className="text-s">
+                  <p className="text-sm">
                     Currently pursuing a Bachelor of Information Technology with a double major in Software Development and Web &
                     Mobile Application Development. Expected to graduate in 2026.
                   </p>
@@ -78,10 +79,63 @@ const cv = () => {
                 </div>
               </div>
             </section>
-            <section>
-              <h2 className="font-semibold border-b pb-1">Projects</h2>
-              <p className="text-sm">
-              </p>
+            <section className="space-y-4">
+              <h2 className="text-2xl font-semibold border-b pb-1">Projects</h2>
+
+              <div className="ml-2">
+                <div className = "flex items-center gap-2">
+                <h3 className="text-lg font-semibold">Personal Portfolio Website</h3>
+                <a 
+                  href="https://github.com/CrabbRex/my-cv-site"
+                  target = "_blank"
+                  rel="noopener noreferrer"
+                  className = "text-[var(--color-secondary) hover:text-blue-600"
+                  >
+                    <LinkSVG className="size-5" />
+                  </a>
+                </div>
+                <p className="text-sm">Developed a personal portfolio website to showcase my projects and skills.</p>
+              </div>
+
+              <div className="ml-2">
+                <div className = "flex items-center gap-2">
+                  <h3 className="text-lg font-semibold">Mobile Application Development MVP</h3>
+                  <a 
+                  href="https://github.com/CrabbRex/quietStudySpaces"
+                  target = "_blank"
+                  rel="noopener noreferrer"
+                  className = "text-[var(--color-secondary) hover:text-blue-600"
+                  >
+                    <LinkSVG className="size-5" />
+                  </a>
+                </div>
+                  <ul className="list-disc list-inside text-sm mt-1 space-y-1">
+                    <li>Developed a mobile app using Flutter and Dart.</li>
+                    <li>Implemented Firebase for authentication and database management.</li>
+                    <li>Included Unit and Widget testing as well as phone service integration (camera).</li>
+                  </ul>
+                
+              </div>
+
+              <div className="ml-2">
+                <div className = "flex items-center gap-2">
+                <h3 className="text-lg font-semibold">Figma Mockups</h3>
+                <a 
+                  href="https://www.figma.com/proto/Nnk0JO6vUjjqa3MYTWkzao/Assignment-2?node-id=42-121&t=r8UUncsNzLgfUBkq-1"
+                  target = "_blank"
+                  rel="noopener noreferrer"
+                  className = "text-[var(--color-secondary) hover:text-blue-600"
+                  >
+                    <LinkSVG className="size-5" />
+                  </a>
+                </div>
+                <ul className="list-disc list-inside text-sm mt-1 space-y-1">
+                  <li>Used Figma to create low fidelity wireframes.</li>
+                  <li>Used Figma to iterate on those wireframes and turn them into a storyboard mockup</li>
+                </ul>
+              </div>
+
+
             </section>
           </div>
         </div>
