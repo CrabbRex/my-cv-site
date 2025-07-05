@@ -14,17 +14,17 @@ const cv = () => {
               <p className="text-blue-600 dark:text-blue-400">Web Developer (Internship Seeking)</p>
             </div>
             <div className="space-y-4">
-              <h2 className="font-semibold border-b pb-1">Contact</h2>
-              <ul className="text-sm">
-                <li>📍 Bondi, Sydney</li>
-                <li>📞 0411 744 688</li>
-                <li>📧 crabbrex@gmail.com</li>
-                <li>🐙 <a href="https://github.com/CrabbRex" className="text-blue-600">GitHub</a></li>
+              <h2 className="text-2xl font-semibold border-b pb-1">Contact</h2>
+              <ul className="ml-2 text-sm">
+                <li>Bondi, Sydney</li>
+                <li>0411 744 688</li>
+                <li>crabbrex@gmail.com</li>
+                <li><a href="https://github.com/CrabbRex" className="text-blue-600">GitHub</a></li>
               </ul>
             </div>
             <section className="space-y-4">
-              <h2 className="font-semibold border-b pb-1">Skills</h2>
-              <section>                
+              <h2 className="text-2xl font-semibold border-b pb-1">Skills</h2>
+              <section className="ml-2">                
                 <h3 className="text-lg font-semibold">Programming Languages</h3>
                 <ul className="list-disc list-inside text-sm">
                   <li>JavaScript</li>
@@ -36,7 +36,7 @@ const cv = () => {
                   <li>Object Oriented Practices</li>
                 </ul>
               </section>
-              <section>                
+              <section className="ml-2">                
                 <h3 className="text-lg font-semibold">Tools/Frameworks</h3>
                 <ul className="list-disc list-inside text-sm">
                   <li>GitHub</li>
