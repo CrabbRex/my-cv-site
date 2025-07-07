@@ -4,29 +4,29 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="flex h-screen pt-20">
+    <main className="min-h-screen pt-24 px-6 flex flex-col md:flex-row items-center justify-center gap-12 text-center md:text-left">
       {/* Left Side - Text Box */}
-      <section className="w-1/2 flex items-center justify-center bg-[var(--color-background)] p-12 overflow-auto">
-        <div className="max-w-md min-h-[60%] text-left bg-[var(--color-box)] text-[var(--color-secondary)] rounded-md p-10 [box-shadow:10px_10px_20px_rgba(0,0,0,0.25)]">
-          <h1 className="text-4xl font-bold mb-4">Hello, I’m Rex Crabb</h1>
-          <p className="text-lg">
-            I am a motivated and resilient Information Technology student with a strong academic record and
-            growing portfolio of personal and academic web development projects.
-          </p>
+      <div className="max-w-xl">
+        <h1 className="text-5xl font-bold mb-4">Hello, I’m Rex Crabb</h1>
+        <p className="text-xl">
+          I am a motivated and resilient Information Technology student with a strong academic record and
+          growing portfolio of personal and academic web development projects.
+        </p>
+        <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
+          <Link href="/projects" className="bg-blue-600 text-white px-6 py-2 rounded-xl hover:bg-blue-700 transition">Projects</Link>
+          <Link href="/cv" className="border-2 border-blue-600 text-blue-600 px-6 py-2 rounded-xl hover:bg-blue-600 hover:text-white transition">CV</Link>
         </div>
-      </section>
+      </div>
       
-      {/* Right Side - Photo */}
-      <section className="w-1/2 flex items-center justify-center">
-        <Image 
-          src="https://dummyimage.com/300x450/000/fff.png"
-          alt="Rex Crabb"
-          width={300}
-          height={450}
-          className="object-cover"
-          priority
-        />
-      </section>
+    {/* Right Side - Photo */}
+      <Image 
+        src="https://dummyimage.com/300x450/000/fff.png"
+        alt="Rex Crabb"
+        width={300}
+        height={450}
+        className="rounded-2xl shadow-lg border-4 border-white dark:border-gray-800 object-cover"
+        priority
+      />
     </main>
   );
 }
