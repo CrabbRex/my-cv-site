@@ -1,3 +1,4 @@
+// File: src/app/cv/page.tsx
 import React from 'react';
 import LinkSVG from '../components/LinkSVG';
 

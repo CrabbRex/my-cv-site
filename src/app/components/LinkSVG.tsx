@@ -1,3 +1,4 @@
+// File: src/app/components/LinkSVG.tsx
 export default function LinkSVG({ className = "size-5 " }) {
     return (
         <svg

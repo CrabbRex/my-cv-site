@@ -1,3 +1,4 @@
+// File: src/app/projects/page.tsx
 import React from 'react'
 
 const projects = () => {

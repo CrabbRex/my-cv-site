@@ -1,3 +1,4 @@
+// src/app/about/page.tsx
 import React from 'react'
 
 const about = () => {
