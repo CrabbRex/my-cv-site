@@ -20,11 +20,11 @@ export default function Home() {
       
     {/* Right Side - Photo */}
       <Image 
-        src="https://dummyimage.com/300x450/000/fff.png"
+        src="/Profile.jpg"
         alt="Rex Crabb"
         width={300}
         height={450}
-        className="rounded-2xl shadow-lg border-4 border-white dark:border-gray-800 object-cover"
+        className="rounded-2xl shadow-lg border-4 border-[var(--color-foreground)] object-cover"
         priority
       />
     </main>

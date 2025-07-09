@@ -31,6 +31,16 @@ export default function RootLayout({
           
         </ThemeProvider>
       </body>
+      <footer>
+        <div className="max-w-5xl mx-auto px-6 py-4 text-center text-sm text-[var(--color-secondary)">
+          <p>
+            © {new Date().getFullYear()} CrabbRex. All rights reserved.
+          </p>
+          <p>
+            Built with <Link href="https://nextjs.org" className="text-blue-600 hover:underline">Next.js</Link> and <Link href="https://tailwindcss.com" className="text-blue-600 hover:underline">Tailwind CSS</Link>.
+          </p>
+        </div>
+      </footer>
     </html>
   );
 }
