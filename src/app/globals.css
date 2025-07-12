@@ -10,6 +10,8 @@
   --color-background: #f7f4f4;
   --color-surface: rgba(210, 215, 220, 0.7);
   --color-foreground: #000000;
+  --color-nav-base: #0000006e;
+  --color-nav-highlight: #000000;
 
   --font-sans: system-ui, sans-serif;
   --font-mono: monospace;
