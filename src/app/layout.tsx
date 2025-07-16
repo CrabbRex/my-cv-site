@@ -6,11 +6,18 @@ import Link from "next/link";
 import ThemeProvider from "./utils/ThemeProvider";
 import ThemeSwitcher from "./components/ThemeSwitcher";
 import Navbar from "./components/navbar";
+import { Space_Grotesk } from "next/font/google";
 
 export const metadata: Metadata = {
   title: 'My CV',
   description: 'Personal portfolio website'
 };
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-space-grotesk',
+  display: 'swap',
+});
 
 export default function RootLayout({
   children,
@@ -18,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
-      <body className="relative">
+    <html className={spaceGrotesk.variable}>
+      <body className="relative font-sans">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
