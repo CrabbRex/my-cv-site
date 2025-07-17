@@ -19,8 +19,8 @@ export default function Navbar() {
         const isActive = pathname === href;
         return `px-3 py-1 rounded-4xl transition border-2 
             ${isActive 
-                ? 'border-[var(--color-nav-base)] bg-[var(--color-background)]' 
-                : 'border-[var(--color-nav-highlight)] hover:border-transparent'}`;
+                ? 'border-[var(--color-foreground)] bg-transparent' 
+                : 'border-transparent'}`;
     };
 
     return (
@@ -33,7 +33,6 @@ export default function Navbar() {
                     <Link href="/projects" className={linkClasses('/projects')}>Projects</Link>
                     <Link href="/cv" className={linkClasses('/cv')}>CV</Link>
                     <Link href="/about" className={linkClasses('/about')}>About</Link>
-
                 </nav>
             </div>
         </header>
