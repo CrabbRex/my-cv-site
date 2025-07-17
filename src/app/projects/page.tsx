@@ -15,7 +15,7 @@ export default function Projects() {
       
       <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-5">
         
-        <div className="bg-[var(--color-pad)] rounded-2xl shadow-md hover:shadow-lg transition duration-300 p-6 mt-5 flex flex-col justify-between">
+        <div className="bg-[var(--color-pad)] text-zinc-950 rounded-2xl shadow-md hover:shadow-lg transition duration-300 p-6 mt-5 flex flex-col justify-between">
           <h2 className="text-xl font-bold mb-1">Portfolio Website</h2>
           <p className="text-sm p-3 pb-0 mb-3">June 2025 - Ongoing</p>
           <p className="text-sm p-3 pb-0 mb-3">Next.js | Tailwind.css | GitHub | Animations</p>
@@ -30,7 +30,7 @@ export default function Projects() {
           </Link>
         </div>
 
-        <div className="bg-[var(--color-pad)] rounded-2xl shadow-md hover:shadow-lg transition duration-300 p-6 mt-5 flex flex-col justify-between">
+        <div className="bg-[var(--color-pad)] text-zinc-950 rounded-2xl shadow-md hover:shadow-lg transition duration-300 p-6 mt-5 flex flex-col justify-between">
           <h2 className="text-xl font-bold mb-1">Quiet Study Spaces MVP</h2>
           <p className="text-sm p-3 pb-0 mb-3">Febuary 2025 - June 2025</p>
           <p className="text-sm p-3 pb-0 mb-3">Flutter | Dart | Firebase | GitHub</p>
@@ -45,7 +45,7 @@ export default function Projects() {
           </Link>
         </div>
 
-        <div className="bg-[var(--color-pad)] rounded-2xl shadow-md hover:shadow-lg transition duration-300 p-6 mt-5 flex flex-col justify-between">
+        <div className="bg-[var(--color-pad)] text-zinc-950 rounded-2xl shadow-md hover:shadow-lg transition duration-300 p-6 mt-5 flex flex-col justify-between">
           <h2 className="text-xl font-bold mb-1">Figma Mockups</h2>
           <p className="text-sm p-3 pb-0 mb-3">Febuary 2025 - June 2025</p>
           <p className="text-sm p-3 pb-0 mb-3">Figma | StoryBoarding</p>
@@ -59,7 +59,7 @@ export default function Projects() {
           </Link>
         </div>
 
-        <div className="bg-[var(--color-pad)] rounded-2xl shadow-md hover:shadow-lg transition duration-300 p-6 mt-5 flex flex-col justify-between">
+        <div className="bg-[var(--color-pad)] text-zinc-950 rounded-2xl shadow-md hover:shadow-lg transition duration-300 p-6 mt-5 flex flex-col justify-between">
           <h2 className="text-xl font-bold mb-1">Interactive F1 Map</h2>
           <p className="text-sm p-3 pb-0 mb-3">August 2024 - November 2024</p>
           <p className="text-sm p-3 pb-0 mb-3">jQuery | HTML | Responsive Design</p>
