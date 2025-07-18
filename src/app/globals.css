@@ -14,6 +14,7 @@
   --color-nav-highlight: #000000;
   --color-pad: rgba(181, 207, 232, 0.7);
   --color-pad-hover: rgba(181, 207, 232, 0.9);
+  --color-oppositeBackground: #373939;
 
   --font-sans: system-ui, sans-serif;
   --font-mono: monospace;
@@ -25,6 +26,7 @@
     --color-box-hover: #6b8bbf;
     --color-box: #7FAE39;
     --color-surface: rgba(255, 255, 255, 0.1);
+    --color-oppositeBackground: #f7f4f4;
 }
 
 

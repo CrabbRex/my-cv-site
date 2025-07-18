@@ -1,40 +1,52 @@
 // File: src/app/components/navbar.tsx
 "use client"
 import Link from 'next/link';
-import ThemeSwitcher from './ThemeSwitcher';
 import { useEffect, useState } from "react";
 import { usePathname } from 'next/navigation';
+import { motion } from "motion/react";
+
+const navLinks = [
+        { href: '/', label: 'Home' },
+        { href: '/projects', label: 'Projects' },
+        { href: '/cv', label: 'CV' },
+        { href: '/about', label: 'About' }
+    ]
+
 
 export default function Navbar() {
-    const pathname = usePathname();
-    const [scrolled, setScrolled] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => setScrolled(window.scrollY > 10);
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
-    const linkClasses = (href: string) => {
-        const isActive = pathname === href;
-        return `px-3 py-1 rounded-4xl transition border-2 
-            ${isActive 
-                ? 'border-[var(--color-foreground)] bg-transparent' 
-                : 'border-transparent'}`;
-    };
-
+    let [activeTab, setActiveTab] = useState(navLinks[0].href);
     return (
         <header className="fixed top-0 left-0 w-full z-50 flex justify-center">
-            <div
-                className={`rounded-3xl px-4 py-2 mt-4 transition-all duration-300 backdrop-blur-md`}
-            >
-                <nav className="max-w-5xl mx-auto flex gap-4 justify-center">
-                    <Link href="/" className={linkClasses('/')}>Home</Link>
-                    <Link href="/projects" className={linkClasses('/projects')}>Projects</Link>
-                    <Link href="/cv" className={linkClasses('/cv')}>CV</Link>
-                    <Link href="/about" className={linkClasses('/about')}>About</Link>
-                </nav>
+            <div className="flex space-x-1 rounded-3xl px-4 py-2 mt-4 backdrop-blur-md">
+                {navLinks.map((link) => (
+                    <Link
+                        key={link.href}
+                        href={link.href}
+                        onClick={() => setActiveTab(link.href)}
+                        className={`relative rounded-full px-3 py-1.5 text-sm font-medium outline-sky-400 transition focus-visible:outline-2
+                            ${activeTab === link.href 
+                                ? "text-white" 
+                                : 'border border-transparent hover:border hover:border-[var(--color-foreground)]'
+                                }`}
+                                style={{
+                                    WebkitTapHighlightColor: 'transparent',
+                                }}
+                    >
+                        {activeTab === link.href && (
+                            <motion.span
+                                layoutId="bubble"
+                                className="absolute inset-0 z-10 bg-[var(--color-oppositeBackground)] rounded-full"
+                                style={{ borderRadius: 9999 }}
+                                transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                            />
+                        )}
+                        <span className={`relative z-20 ${activeTab === link.href ? "text-[var(--color-background)]" : ""}`}>
+                            {link.label}
+                        </span>
+                    </Link>
+                ))}
+                {/* <ThemeSwitcher /> */}
             </div>
         </header>
-    );
+    )
 }
