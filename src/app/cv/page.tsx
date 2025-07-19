@@ -41,10 +41,25 @@ const cv = () => {
                 <h3 className="text-lg font-semibold">Tools/Frameworks</h3>
                 <ul className="list-disc list-inside text-sm">
                   <li>GitHub</li>
-                  <li>React</li>
+                  <li>React/Next.js</li>
                   <li>Flutter</li>
+                  <li>Motion</li>
                   <li>Firebase Auth and Database</li>
                   <li>UX Research & Figma</li>
+                </ul>
+              </section>
+              
+              <h2 className="text-2xl font-semibold border-b pb-1">Experience</h2>
+              <section className="ml-2">
+                <ul className="list-disc list-inside text-sm">
+                  <li>Developed a study-location discovery app MVP using Flutter and Firebase.</li>
+                  <li>Integrated camera functionality and cloud-based photo storage.</li>
+                  <li>Designed intuitive UI to suit user needs based on mobile UX research.</li>
+                  <li>Conducted a UX survey.</li>
+                  <li>Created interactive mockups in Figma.</li>
+                  <li>Applied Agile principles in project iterations for university software development units.</li>
+                  <li>Collaborate with peers to create mobile application solutions.</li>
+                  <li>Consistently achieved high academic results while managing personal health challenges.</li>
                 </ul>
               </section>
 
