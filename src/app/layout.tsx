@@ -25,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className={spaceGrotesk.variable}>
-      <body className="relative font-sans">
+    <html lang="en" suppressHydrationWarning>
+      <body className={`relative font-sans ${spaceGrotesk.variable}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -37,8 +37,8 @@ export default function RootLayout({
         {children}
           
         </ThemeProvider>
-      </body>
-      <footer>
+
+        <footer>
         <div className="max-w-5xl mx-auto px-6 py-4 text-center text-sm text-[var(--color-secondary)">
           <p>
             © {new Date().getFullYear()} CrabbRex. All rights reserved.
@@ -48,6 +48,7 @@ export default function RootLayout({
           </p>
         </div>
       </footer>
+      </body>
     </html>
   );
 }
