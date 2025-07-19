@@ -9,7 +9,6 @@ export default function Projects() {
       <div>
         <p className="pt-5 pb-5 border-t border-b w-screen items-center justidy-center text-center text-sm text-[var(--color-foreground)]">
           Here are some of the projects I have worked on, showcasing my skills in web development, mobile app development, and design.
-          Click on the project titles to learn more about each project.
         </p>
       </div>
       
@@ -74,45 +73,6 @@ export default function Projects() {
             </button>
           </Link>
         </div>
-
-        {/* <Link href="/projects/cv-website" className="hover:underline">
-          <div className="rounded-xl bg-[var(--color-surface)] backdrop-blur-md p-6 border border-white/20 shadow hover:shadlow-lg transition">
-            <h2 className="text-xl font-semibold mb-2">Portfolio Website</h2>
-            <p className="text-sm mb-4">
-              A personal portfolio website showcasing my projects and skills, built with Next.js and Tailwind CSS.
-            </p>
-          </div>
-        </Link>
-
-        <Link href="/projects/quiet-study-spaces" className="hover:underline">
-          <div className="rounded-xl bg-[var(--color-surface)] backdrop-blur-md p-6 border border-white/20 shadow hover:shadlow-lg transition">
-            <h2 className="text-xl font-semibold mb-2">Quiet Study Spaces MVP</h2>
-            <p className="text-sm mb-4">
-              A mobile application MVP that helps students find quiet study spaces, built with Flutter and Firebase.
-            </p>
-          </div>
-        </Link>
-
-        <Link href="/projects/figma" className="hover:underline">
-          <div className="rounded-xl bg-[var(--color-surface)] backdrop-blur-md p-6 border border-white/20 shadow hover:shadlow-lg transition">
-            <h2 className="text-xl font-semibold mb-2">Figma Mockups</h2>
-            <p className="text-sm mb-4">
-              A collection of Figma mockups for various projects, showcasing my design skills and UX research.
-            </p>
-          </div>
-        </Link>
-
-        <Link href="/projects/figma" className="hover:underline">
-          <div className="rounded-xl bg-[var(--color-surface)] backdrop-blur-md p-6 border border-white/20 shadow hover:shadlow-lg transition">
-            <h2 className="text-xl font-semibold mb-2">Interactive F1 Map</h2>
-            <p className="text-sm mb-4">
-              An interactive map of F1 circuits, built with jQuery and made for webpages.
-            </p>
-          </div>
-        </Link> */}
-
-        
-
       </div>
     </main>
   )
