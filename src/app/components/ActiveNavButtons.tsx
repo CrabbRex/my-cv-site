@@ -7,7 +7,7 @@ export default function ActiveNavButtons() {
     const { setActiveTab } = useActiveTab();
 
     return (
-        <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
+        <div className="mt-6 flex flex-wrap gap-4 justify-start">
             <Link
                 href="/projects"
                 className="bg-blue-600 text-white px-6 py-2 rounded-xl hover:bg-blue-700 transition"
