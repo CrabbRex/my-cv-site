@@ -6,8 +6,8 @@ export default function Projects() {
   return (
     <main className="flex min-h-screen mx-auto px-2 items-center flex-col py-24">
       <h1 className="text-4xl font-bold mb-8 text-[var(--color-foreground)] border-b pb-1">Projects</h1>
-      <div>
-        <p className="pt-5 pb-5 border-t border-b w-screen items-center justidy-center text-center text-sm text-[var(--color-foreground)]">
+      <div className="w-screen border-t border-b">
+        <p className="pt-5 pb-5 px-4 md:px-5 max-w-4xl mx-auto text-center text-sm text-[var(--color-foreground)]">
           Here are some of the projects I have worked on, showcasing my skills in web development, mobile app development, and design.
         </p>
       </div>
