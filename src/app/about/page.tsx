@@ -27,7 +27,7 @@ const about = () => {
       </section>
 
       <h1 className="text-8xl pt-30 font-bold mb-4 justify-center text-center">Contact Me:</h1>
-      <section className="max-w-2xl mx-auto grid grid-cols-2 md:grid-cols-2 gap-6 items-center text-center pb-20 pt-10">
+      <section className="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center text-center pb-20 pt-10 px-4">
         <div className="bg-[var(--color-pad)] hover:bg-[var(--color-pad-hover)] rounded-2xl shadow-md hover:shadow-lg transition duration-300 p-6 mt-5 flex flex-col justify-between">
           <h2><a href="mailto:Crabbrex@gmail.com" className="hover:cursor-pointer">Crabbrex@gmail.com</a></h2>
         </div>
