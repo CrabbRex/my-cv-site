@@ -50,7 +50,11 @@ export default function ThemeSwitcher() {
   return (
     <button
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="fixed right-4 top-4 z-50 p-2 rounded-3xl bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100 hover:opacity-80 transition"
+      className="fixed bottom-4 right-4 top-auto left-auto md:top-4 md:right-4 md:bottom-auto md:left-auto z-50 p-2 rounded-3xl hover:opacity-80 transition"
+      style={{
+        backgroundColor: 'var(--color-oppositeBackground)',
+        color: 'var(--color-background)',
+      }}
       
     >
       {theme === 'dark' ? sunIcon : moonIcon}
