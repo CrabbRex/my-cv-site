@@ -7,6 +7,7 @@ import ThemeProvider from "./utils/ThemeProvider";
 import ThemeSwitcher from "./components/ThemeSwitcher";
 import Navbar from "./components/navbar";
 import { Space_Grotesk } from "next/font/google";
+import { ActiveTabProvider } from "./components/ActiveTabContext";
 
 export const metadata: Metadata = {
   title: 'My CV',
@@ -32,22 +33,23 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem={true}
         >
-        <Navbar />
-        <ThemeSwitcher />
-        {children}
-          
+          <ActiveTabProvider>
+            <Navbar />
+            <ThemeSwitcher />
+            {children}
+          </ActiveTabProvider>
         </ThemeProvider>
 
         <footer>
-        <div className="max-w-5xl mx-auto px-6 py-4 text-center text-sm text-[var(--color-secondary)">
-          <p>
-            © {new Date().getFullYear()} CrabbRex. All rights reserved.
-          </p>
-          <p>
-            Built with <Link href="https://nextjs.org" className="text-blue-600 hover:underline">Next.js</Link> and <Link href="https://tailwindcss.com" className="text-blue-600 hover:underline">Tailwind CSS</Link>.
-          </p>
-        </div>
-      </footer>
+          <div className="max-w-5xl mx-auto px-6 py-4 text-center text-sm text-[var(--color-secondary)">
+            <p>
+              © {new Date().getFullYear()} CrabbRex. All rights reserved.
+            </p>
+            <p>
+              Built with <Link href="https://nextjs.org" className="text-blue-600 hover:underline">Next.js</Link> and <Link href="https://tailwindcss.com" className="text-blue-600 hover:underline">Tailwind CSS</Link>.
+            </p>
+          </div>
+        </footer>
       </body>
     </html>
   );

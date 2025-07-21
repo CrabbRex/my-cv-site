@@ -1,6 +1,8 @@
 // app/page.tsx
 import Link from 'next/link';
 import Image from 'next/image';
+import { useActiveTab } from './components/ActiveTabContext';
+import ActiveNavButtons from './components/ActiveNavButtons';
 
 export default function Home() {
   return (
@@ -12,10 +14,7 @@ export default function Home() {
           I am a motivated and resilient Information Technology student with a strong academic record and
           growing portfolio of personal and academic web development projects.
         </p>
-        <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
-          <Link href="/projects" className="bg-blue-600 text-white px-6 py-2 rounded-xl hover:bg-blue-700 transition">Projects</Link>
-          <Link href="/cv" className="border-2 border-blue-600 text-blue-600 px-6 py-2 rounded-xl hover:bg-blue-600 hover:text-white transition">CV</Link>
-        </div>
+        <ActiveNavButtons />
       </div>
       
     {/* Right Side - Photo */}
