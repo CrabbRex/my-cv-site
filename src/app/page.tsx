@@ -1,7 +1,5 @@
 // app/page.tsx
-import Link from 'next/link';
 import Image from 'next/image';
-import { useActiveTab } from './components/ActiveTabContext';
 import ActiveNavButtons from './components/ActiveNavButtons';
 
 export default function Home() {
@@ -9,7 +7,7 @@ export default function Home() {
     <main className="min-h-screen pt-24 px-6 flex flex-col md:flex-row items-center justify-center gap-12">
       {/* Left Side - Text Box */}
       <div className="max-w-xl md:text-left">
-        <h1 className="text-5xl font-bold mb-4">Hello, I’m Rex Crabb</h1>
+        <h1 className="text-5xl font-bold mb-4">Hello, I&apos;m Rex Crabb</h1>
         <p className="text-xl">
           I am a motivated and resilient Information Technology student with a strong academic record and
           growing portfolio of personal and academic web development projects.

@@ -46,12 +46,15 @@ export default function RootLayout({
         </ThemeProvider>
 
         <footer>
-          <div className="max-w-5xl mx-auto px-6 py-4 text-center text-sm text-[var(--color-secondary)">
+          <div className="max-w-5xl mx-auto px-6 py-4 text-center text-sm">
             <p>
               © {new Date().getFullYear()} CrabbRex. All rights reserved.
             </p>
             <p>
-              Built with <Link href="https://nextjs.org" className="text-blue-600 hover:underline">Next.js</Link> and <Link href="https://tailwindcss.com" className="text-blue-600 hover:underline">Tailwind CSS</Link>.
+              Built with <Link href="https://nextjs.org" className="text-blue-600 hover:underline" target="_blank">Next.js</Link> and <Link href="https://tailwindcss.com" className="text-blue-600 hover:underline" target="_blank">Tailwind CSS</Link>.
+            </p>
+            <p>
+              Deployed with <Link href="https://vercel.com" className="text-blue-600 hover:underline" target="_blank">Vercel</Link>.
             </p>
           </div>
         </footer>

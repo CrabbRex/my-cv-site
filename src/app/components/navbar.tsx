@@ -1,8 +1,6 @@
 // File: src/app/components/navbar.tsx
 "use client"
 import Link from 'next/link';
-import { useEffect, useState } from "react";
-import { usePathname } from 'next/navigation';
 import { motion } from "motion/react";
 import { useActiveTab } from "./ActiveTabContext";
 

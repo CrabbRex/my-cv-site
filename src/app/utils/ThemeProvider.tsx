@@ -5,7 +5,7 @@ import {ThemeProvider as NextThemesProvider} from "next-themes";
 
 interface ThemeProviderProps {
     children: ReactNode;
-    [key: string]: any;
+    [key: string]: unknown;
 }
 
 export default function ThemeProvider({children, ...props}: ThemeProviderProps) {
