@@ -5,7 +5,7 @@ import Image from 'next/image'
 const about = () => {
   return (
     <main>
-      <h1 className="text-6xl md:text-8xl pt-44 font-bold mb-4 justify-center text-center">I'm Rex</h1>
+      <h1 className="text-6xl md:text-8xl pt-44 font-bold mb-4 justify-center text-center">I&apos;m Rex</h1>
       
       <section className="pt-10 px-6 flex flex-col md:flex-row gap-12 text-center items-center justify-center md:text-left">
         {/* Left */}
