@@ -32,10 +32,10 @@ export default function Projects() {
         <div className="bg-[var(--color-pad)] text-zinc-950 hover:bg-[var(--color-pad-hover)] rounded-2xl shadow-md hover:shadow-lg transition duration-300 p-6 mt-5 flex flex-col justify-between">
           <h2 className="text-xl font-bold mb-1">Quiet Study Spaces MVP</h2>
           <p className="text-sm p-3">Febuary 2025 - June 2025</p>
-          <p className="text-sm p-3">Flutter | Dart | Firebase | GitHub</p>
+          <p className="text-sm p-3">Flutter | Dart | Firebase | GitHub | CI/CD</p>
           <p className="p-3 text-sm mb-4">
             A mobile application MVP that helps students find quiet study spaces. <br/>
-            This Project helped me develop skills with Flutter and Firebase, as well as GitHub for version control.
+            This Project helped me develop skills with Flutter and Firebase, as well as GitHub for version control and CI/CD.
           </p>
           <Link href="https://github.com/CrabbRex/quietStudySpaces" target="_blank">
             <button className="self-start text-sm font-semibold border border-[var(--color-foreground)] px-4 py-2 rounded-3xl hover:bg-blue-600 hover:border-blue-600 hover:text-[var(--color-background)] transition cursor-pointer">
