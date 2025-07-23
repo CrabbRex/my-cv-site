@@ -18,7 +18,7 @@ const cv = () => {
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold border-b pb-1">Contact</h2>
               <ul className="ml-2 text-base">
-                <li>Location: Bondi, Sydney</li>
+                <li>Location: Sydney</li>
                 <li>Phone: 0411 744 688</li>
                 <li>Email: Crabbrex@gmail.com</li>
                 <li className="flex items-center gap-1">
@@ -74,7 +74,7 @@ const cv = () => {
                 <h3 className="text-lg font-semibold">Additional</h3>
                 <ul className="list-disc list-inside text-sm">
                   <li>Strong problem-solving skills and attention to detail.</li>
-                  <li>Collaborative team member with experience working in Agile university projects.</li>
+                  <li>Collaborative team member with experience working in university projects using the Agile Methodology.</li>
                   <li>Self-taught in front-end development beyond coursework.</li>
                 </ul>
               </section>
@@ -86,19 +86,16 @@ const cv = () => {
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-[var(--color-secondary) border-b pb-1">Education</h2>
               <div className="ml-2">
+                
                 <div>
-                  <h3 className="text-lg font-semibold">HSC - Cranbrook School</h3>
-                  <p className="text-sm">Graduated in 2021 with a HSC from Cranbrook.</p>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold">Macquarie University</h3>
+                  <h3 className="text-lg font-semibold">Bachelor of Information Technology</h3>
                   <p className="text-sm">
-                    Currently pursuing a Bachelor of Information Technology with a double major in Software Development and Web &
-                    Mobile Application Development. Expected to graduate in 2026.
+                    Double major: Software Development and Web & Mobile Application Development. 
                   </p>
-                  <h3 className="text-lg font-semibold">Relevant Coursework</h3>
+                  <p className="text-sm">Macquarie University | Current WAM: 83.625 | Expected 2026 graduation.</p>
+                  <h3 className="pt-3 text-lg font-semibold">Relevant Coursework</h3>
                   <div className="text-sm space-y-1">
-                    <p>Current WAM: 83.625</p>
+                    <p></p>
                     <p>
                       Consistently achieved High Distinctions and Distinctions in core programming, web, and software engineering units:
                     </p>
@@ -109,6 +106,10 @@ const cv = () => {
                       <li>Database Design (82), Statistics (99), OOP (83).</li>
                     </ul>
                   </div>
+                </div>
+                <div className="pt-3">
+                  <h3 className="text-lg font-semibold">HSC - Cranbrook School</h3>
+                  <p className="text-sm">Graduated in 2021 with a HSC from Cranbrook.</p>
                 </div>
               </div>
             </section>
@@ -162,7 +163,7 @@ const cv = () => {
                   </a>
                 </div>
                 <p className="text-sm">
-                  Created low- and high-fidelity wireframes in Figma for a dog-care app with two user roles. Translated user research into an interactive storyboard prototype and supported the handoff to development.
+                  Created low and high-fidelity wireframes in Figma for a dog-care app with two user roles. Translated user research into an interactive storyboard prototype.
                 </p>
               </div>
             </section>

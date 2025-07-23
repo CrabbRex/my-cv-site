@@ -49,8 +49,8 @@ export default function Projects() {
           <p className="text-sm p-3">Febuary 2025 - June 2025</p>
           <p className="text-sm p-3">Figma | StoryBoarding</p>
           <p className="p-3 text-sm mb-4">
-            A collection of Figma mockups a university project, showcasing my design skills and UX research. <br/>
-            The feedback from this project helped me understand the importance of user experience and design in software development.
+            A Figma mockup created for a university project, guided by detailed design specifications. It highlights my skills in visual design and UX research. <br/>
+            The feedback from this project deepened my understanding of the vital role user experience plays in effective software development.
           </p>
           <Link href="https://www.figma.com/proto/Nnk0JO6vUjjqa3MYTWkzao/Assignment-2?node-id=42-121&t=r8UUncsNzLgfUBkq-1" target="_blank">
             <button className="self-start text-sm font-semibold border border-[var(--color-foreground)] px-4 py-2 rounded-3xl hover:bg-blue-600 hover:border-blue-600 hover:text-[var(--color-background)] transition cursor-pointer">
