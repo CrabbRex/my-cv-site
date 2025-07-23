@@ -22,7 +22,8 @@ const about = () => {
         {/* Right */}
         <div className="text-center md:text-left space-y-6 max-w-lg">
           <p className="text-ld md:text-xl text-[var(--color-foreground)] leading-relaxed">I&apos;m an IT student at Macquarie University who&apos;s interested in Web Development and Software Development.</p>
-          <p className="text-ld md:text-xl text-[var(--color-foreground)] leading-relaxed">My personal hobbies include reading Science Fiction, Fantasy and Philosophy. I also enjoy exercising, guitar/Rock music and AFL.</p>
+          <p className="text-ld md:text-xl text-[var(--color-foreground)] leading-relaxed">My personal hobbies include reading Science Fiction, Fantasy and Philosophy. I also enjoy exercising, guitar/rock music and AFL.</p>
+          <p className="text-ld md:text-xl text-[var(--color-foreground)] leading-relaxed">I have also really enjoy making small Game Development projects, mainly on PICO-8 and Love2D</p>
         </div>
       </section>
 
