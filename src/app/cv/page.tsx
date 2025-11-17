@@ -113,9 +113,21 @@ const cv = () => {
                 </div>
               </div>
             </section>
+            {/* Projects */}
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold border-b pb-1">Projects</h2>
-
+              {/* 1 */}
+              <div className="ml-2">
+                <div className="flex items-center gap-2">
+                  <h3 className="text-lg font-semibold">Visual Social Media Calendar</h3>
+                  {/* No GitHub link because the repository is private */}
+                  <span className="text-xs text-gray-500">(Private Client Project)</span>
+                </div>
+                <p className="text-sm">
+                  Collaborated with a small team to build a visual, interative social media calendar for a Client focusing on UX. Used Django, MongoDB and JavaScript, featuring drag-and-drop post scheduling, PDF exports and full CRUD. Contributed to both backend API design and frontend functionality within an Agile workflow.
+                </p>
+              </div>
+              {/* 2 */}
               <div className="ml-2">
                 <div className = "flex items-center gap-2">
                 <h3 className="text-lg font-semibold">Personal Portfolio Website</h3>
@@ -132,7 +144,7 @@ const cv = () => {
                   Designed and built a fully responsive portfolio using Next.js and Tailwind CSS to showcase academic and personal projects. Implemented custom animations with Framer Motion and deployed via Vercel.
                 </p>
               </div>
-
+              {/* 3 */}
               <div className="ml-2">
                 <div className = "flex items-center gap-2">
                   <h3 className="text-lg font-semibold">Mobile Application Development MVP</h3>
@@ -149,7 +161,7 @@ const cv = () => {
                     Built a cross-platform study-space discovery app using Flutter, implementing Firebase Auth and Firestore for secure user data management and real time updates.
                   </p>
               </div>
-
+              {/* 4 */}
               <div className="ml-2">
                 <div className = "flex items-center gap-2">
                 <h3 className="text-lg font-semibold">Figma Mockups</h3>
