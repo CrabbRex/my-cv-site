@@ -23,7 +23,7 @@ const cv = () => {
                 <li>Email: Crabbrex@gmail.com</li>
                 <li className="flex items-center gap-1">
                   GitHub:
-                  <a 
+                  <a
                     href="https://github.com/CrabbRex/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -36,10 +36,10 @@ const cv = () => {
                 {/* <li><a href="https://github.com/CrabbRex" className="text-[var(--color-linkText)] hover:underline">GitHub</a></li> */}
               </ul>
             </div>
-            
-            <section className="space-y-4">
+
+            <section className="space-y-4  mb-5">
               <h2 className="text-2xl font-semibold border-b pb-1">Skills</h2>
-              <section className="ml-2">                
+              <section className="ml-2">
                 <h3 className="text-lg font-semibold">Programming Languages</h3>
                 <ul className="list-disc list-inside text-sm">
                   <li>JavaScript</li>
@@ -50,7 +50,7 @@ const cv = () => {
                   <li>SQL</li>
                 </ul>
               </section>
-              <section className="ml-2">                
+              <section className="ml-2">
                 <h3 className="text-lg font-semibold">Tools/Frameworks</h3>
                 <ul className="list-disc list-inside text-sm">
                   <li>GitHub</li>
@@ -58,6 +58,7 @@ const cv = () => {
                   <li>Flutter</li>
                   <li>Motion</li>
                   <li>Firebase Auth and Database</li>
+                  <li>MongoDB Atlas</li>
                   <li>UX Research & Figma</li>
                 </ul>
               </section>
@@ -86,11 +87,11 @@ const cv = () => {
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold text-[var(--color-secondary) border-b pb-1">Education</h2>
               <div className="ml-2">
-                
+
                 <div>
                   <h3 className="text-lg font-semibold">Bachelor of Information Technology</h3>
                   <p className="text-sm">
-                    Double major: Software Development and Web & Mobile Application Development. 
+                    Double major: Software Development and Web & Mobile Application Development.
                   </p>
                   <p className="text-sm">Macquarie University | Current WAM: 83.625 | Expected 2026 graduation.</p>
                   <h3 className="pt-3 text-lg font-semibold">Relevant Coursework</h3>
@@ -113,17 +114,29 @@ const cv = () => {
                 </div>
               </div>
             </section>
+            {/* Projects */}
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold border-b pb-1">Projects</h2>
-
+              {/* 1 */}
               <div className="ml-2">
-                <div className = "flex items-center gap-2">
-                <h3 className="text-lg font-semibold">Personal Portfolio Website</h3>
-                <a 
-                  href="https://github.com/CrabbRex/my-cv-site"
-                  target = "_blank"
-                  rel="noopener noreferrer"
-                  className = "text-[var(--color-secondary) hover:text-blue-600"
+                <div className="flex items-center gap-2">
+                  <h3 className="text-lg font-semibold">Visual Social Media Calendar</h3>
+                  {/* No GitHub link because the repository is private */}
+                  <span className="text-xs text-gray-500">(Private Client Project)</span>
+                </div>
+                <p className="text-sm">
+                  Collaborated with a small team to build a visual, interative social media calendar for a Client focusing on UX. Used Django, MongoDB and JavaScript, featuring drag-and-drop post scheduling, PDF exports and full CRUD. Contributed to both backend API design and frontend functionality within an Agile workflow.
+                </p>
+              </div>
+              {/* 2 */}
+              <div className="ml-2">
+                <div className="flex items-center gap-2">
+                  <h3 className="text-lg font-semibold">Personal Portfolio Website</h3>
+                  <a
+                    href="https://github.com/CrabbRex/my-cv-site"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--color-secondary) hover:text-blue-600"
                   >
                     <LinkSVG className="size-5" />
                   </a>
@@ -132,32 +145,32 @@ const cv = () => {
                   Designed and built a fully responsive portfolio using Next.js and Tailwind CSS to showcase academic and personal projects. Implemented custom animations with Framer Motion and deployed via Vercel.
                 </p>
               </div>
-
+              {/* 3 */}
               <div className="ml-2">
-                <div className = "flex items-center gap-2">
+                <div className="flex items-center gap-2">
                   <h3 className="text-lg font-semibold">Mobile Application Development MVP</h3>
-                  <a 
-                  href="https://github.com/CrabbRex/quietStudySpaces"
-                  target = "_blank"
-                  rel="noopener noreferrer"
-                  className = "text-[var(--color-secondary) hover:text-blue-600"
+                  <a
+                    href="https://github.com/CrabbRex/quietStudySpaces"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--color-secondary) hover:text-blue-600"
                   >
                     <LinkSVG className="size-5" />
                   </a>
                 </div>
-                  <p className="text-sm">
-                    Built a cross-platform study-space discovery app using Flutter, implementing Firebase Auth and Firestore for secure user data management and real time updates.
-                  </p>
+                <p className="text-sm">
+                  Built a cross-platform study-space discovery app using Flutter, implementing Firebase Auth and Firestore for secure user data management and real time updates.
+                </p>
               </div>
-
+              {/* 4 */}
               <div className="ml-2">
-                <div className = "flex items-center gap-2">
-                <h3 className="text-lg font-semibold">Figma Mockups</h3>
-                <a 
-                  href="https://www.figma.com/proto/Nnk0JO6vUjjqa3MYTWkzao/Assignment-2?node-id=42-121&t=r8UUncsNzLgfUBkq-1"
-                  target = "_blank"
-                  rel="noopener noreferrer"
-                  className = "text-[var(--color-secondary) hover:text-blue-600"
+                <div className="flex items-center gap-2">
+                  <h3 className="text-lg font-semibold">Figma Mockups</h3>
+                  <a
+                    href="https://www.figma.com/proto/Nnk0JO6vUjjqa3MYTWkzao/Assignment-2?node-id=42-121&t=r8UUncsNzLgfUBkq-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--color-secondary) hover:text-blue-600"
                   >
                     <LinkSVG className="size-5" />
                   </a>
@@ -167,24 +180,23 @@ const cv = () => {
                 </p>
               </div>
             </section>
-            
-            <section className="space-y-4">
-            <h2 className="text-2xl font-semibold border-b pb-1">Experience</h2>
-            <div className="ml-2">
-              <ul className="list-disc list-inside text-sm">
-                <li>Set up GitHub Actions CI/CD pipelines to automatically build APKs on push, streamlining deployment for a Flutter-based mobile app.</li>
-                <li>Applied Agile principles during a UX research project, focusing on interative feedback and team collaboration.</li>
-                <li>Conducted user surveys, analyzed results and translated insights into actionable design improvements.</li>
-                <li>Designed intuitive UI to suit user needs based on mobile UX research.</li>
-                <li>Built interactive Figma prototypes and mockups to communicate design changes and user flows.</li>
-                {/* <li>Applied Agile principles in project iterations for university software development units.</li> */}
-                <li>Collaborate with peers to create mobile application solutions.</li>
-                <li>Consistently achieved high academic results while managing personal health challenges.</li>
-              </ul>
-            </div>
-            </section>
           </div>
         </div>
+        <section className="space-y-4">
+          <h2 className="text-2xl font-semibold border-b pb-1">Experience</h2>
+          <div className="ml-2">
+            <ul className="list-disc list-outside ml-3.5 text-sm">
+              <li>Developed and maintained web and mobile apps using Vercel and GitHub Actions CI/CD pipelines for automated builds, deployments and APK generation.</li>
+              <li>Applied Agile principles in university and client projects, iterating on deliverables and collaborating with a small team.</li>
+              <li>Built interactive Figma prototypes, translating user research into actionable user experience improvements.</li>
+              <li>Collaborated with a client to deliver a visual social media calendar, contributing to frontend and backend development with Django, MongoDB and JavaScript.</li>
+              <li>Implemented unit and integration tests to ensure reliability of software projects.</li>
+              <li>Used Git feature branch workflows and pull requests to manage code and track changes across prjects.</li>
+              <li>Collaborated with peers to create mobile application solutions.</li>
+              <li>Consistently achieved high academic results while managing personal health challenges.</li>
+            </ul>
+          </div>
+        </section>
       </div>
     </main>
   )
