@@ -7,19 +7,20 @@ import ThemeSwitcher from "./components/ThemeSwitcher";
 import Navbar from "./components/navbar";
 import { Space_Grotesk } from "next/font/google";
 import { ActiveTabProvider } from "./components/ActiveTabContext";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
-  title: 'My CV',
-  description: 'Personal portfolio website',
+  title: "My CV",
+  description: "Personal portfolio website",
   icons: {
-    icon: '/favicon.ico'
-  }
+    icon: "/favicon.ico",
+  },
 };
 
 const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  variable: '--font-space-grotesk',
-  display: 'swap',
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  display: "swap",
 });
 
 export default function RootLayout({
@@ -33,6 +34,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={`relative font-sans ${spaceGrotesk.variable}`}>
+        <Analytics />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -47,14 +49,36 @@ export default function RootLayout({
 
         <footer>
           <div className="max-w-5xl mx-auto px-6 py-4 text-center text-sm">
+            <p>© {new Date().getFullYear()} CrabbRex. All rights reserved.</p>
             <p>
-              © {new Date().getFullYear()} CrabbRex. All rights reserved.
+              Built with{" "}
+              <Link
+                href="https://nextjs.org"
+                className="text-blue-600 hover:underline"
+                target="_blank"
+              >
+                Next.js
+              </Link>{" "}
+              and{" "}
+              <Link
+                href="https://tailwindcss.com"
+                className="text-blue-600 hover:underline"
+                target="_blank"
+              >
+                Tailwind CSS
+              </Link>
+              .
             </p>
             <p>
-              Built with <Link href="https://nextjs.org" className="text-blue-600 hover:underline" target="_blank">Next.js</Link> and <Link href="https://tailwindcss.com" className="text-blue-600 hover:underline" target="_blank">Tailwind CSS</Link>.
-            </p>
-            <p>
-              Deployed with <Link href="https://vercel.com" className="text-blue-600 hover:underline" target="_blank">Vercel</Link>.
+              Deployed with{" "}
+              <Link
+                href="https://vercel.com"
+                className="text-blue-600 hover:underline"
+                target="_blank"
+              >
+                Vercel
+              </Link>
+              .
             </p>
           </div>
         </footer>
