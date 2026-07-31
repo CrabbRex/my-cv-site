@@ -16,6 +16,9 @@
   --color-pad-hover: rgba(181, 207, 232, 0.9);
   --color-oppositeBackground: #373939;
   --color-linkText: #0062ff;
+  /* Per-project accents used to tint project cards */
+  --color-accent-red: #d23f3f;
+  --color-accent-violet: #7c5cff;
   
 
   --font-sans: system-ui, sans-serif;
@@ -30,6 +33,10 @@
     --color-surface: rgba(255, 255, 255, 0.1);
     --color-oppositeBackground: #f7f4f4;
     --color-linkText: #4786ec;
+    --color-pad: rgba(80, 110, 140, 0.35);
+    --color-pad-hover: rgba(80, 110, 140, 0.5);
+    --color-accent-red: #e8615f;
+    --color-accent-violet: #a78bfa;
 }
 
 
