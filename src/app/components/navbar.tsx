@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { motion } from "motion/react";
 import { useLayoutEffect, useRef, useState } from "react";
 import { useActiveTab } from "./ActiveTabContext";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const navLinks = [
         { href: '/', label: 'Home' },
@@ -84,7 +85,7 @@ export default function Navbar() {
                         </span>
                     </Link>
                 ))}
-                {/* <ThemeSwitcher /> */}
+                <ThemeSwitcher />
             </div>
         </header>
     )

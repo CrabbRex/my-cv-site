@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
 import ThemeProvider from "./utils/ThemeProvider";
-import ThemeSwitcher from "./components/ThemeSwitcher";
 import Navbar from "./components/navbar";
 import { Space_Grotesk } from "next/font/google";
 import { ActiveTabProvider } from "./components/ActiveTabContext";
@@ -42,7 +41,6 @@ export default function RootLayout({
         >
           <ActiveTabProvider>
             <Navbar />
-            <ThemeSwitcher />
             {children}
           </ActiveTabProvider>
         </ThemeProvider>
