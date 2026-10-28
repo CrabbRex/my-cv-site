@@ -11,7 +11,7 @@ export default function ActiveNavButtons() {
       <div className="flex flex-wrap gap-4">
         <Link
           href="/projects"
-          className="bg-[var(--color-secondary)] text-[var(--color-background)] px-6 py-2 rounded-xl font-semibold hover:opacity-85 transition"
+          className="bg-[var(--color-oppositeBackground)] text-[var(--color-background)] px-6 py-2 rounded-xl font-semibold hover:opacity-85 transition"
           onClick={() => setActiveTab("/projects")}
         >
           Projects

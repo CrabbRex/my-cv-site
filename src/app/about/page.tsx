@@ -10,12 +10,12 @@ const about = () => {
       <section className="pt-10 px-6 flex flex-col md:flex-row gap-12 text-center items-center justify-center md:text-left">
         {/* Left */}
         <div>
-          <Image 
+          <Image
             src="/about.jpg"
             alt="Rex Crabb"
             width={300}
             height={450}
-            className="rounded-2xl shadow-lg border-4 border-[var(--color-foreground)] object-cover transform transition-transform duration-300 hover:scale-105"
+            className="rounded-2xl border border-[var(--color-line)] object-cover shadow-[6px_6px_0_var(--color-oppositeBackground)] transform transition-transform duration-300 hover:scale-105"
             priority
           />
         </div>
