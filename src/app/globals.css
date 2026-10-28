@@ -19,10 +19,6 @@
   --color-oppositeBackground: #1c2117;
   --color-linkText: #5f7fa0;
   --color-line: #1c211733;
-  /* Per-project accents used to tint project cards */
-  --color-accent-red: #d23f3f;
-  --color-accent-violet: #7c5cff;
-
 
   --font-sans: system-ui, sans-serif;
   --font-mono: monospace;
@@ -42,8 +38,6 @@
     --color-pad: rgba(35, 40, 31, 0.8);
     --color-pad-hover: rgba(35, 40, 31, 0.95);
     --color-line: #f1efe433;
-    --color-accent-red: #e8615f;
-    --color-accent-violet: #a78bfa;
 }
 
 

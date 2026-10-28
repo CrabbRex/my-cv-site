@@ -20,10 +20,8 @@ export type Project = {
   icon: LucideIcon;
   /** What the project shipped to — picks the frame the screenshot sits in. */
   medium: "web" | "mobile";
-  /** Shown in the browser chrome address bar. Web projects only. */
+  /** Shown as the spec-label under the screenshot. Web projects only. */
   urlLabel?: string;
-  /** CSS custom property reference used to tint the media panel. */
-  accent: string;
   image?: StaticImageData;
 };
 
@@ -41,7 +39,6 @@ export const projects: Project[] = [
     icon: Github,
     medium: "web",
     urlLabel: "pomocd.org",
-    accent: "var(--color-accent-violet)",
     image: pomoCDImg,
   },
   {
@@ -55,7 +52,6 @@ export const projects: Project[] = [
     icon: Github,
     medium: "web",
     urlLabel: "github.com/CrabbRex/my-cv-site",
-    accent: "var(--color-linkText)",
     image: cvSiteImg,
   },
   {
@@ -68,7 +64,6 @@ export const projects: Project[] = [
     button: "View on GitHub",
     icon: Smartphone,
     medium: "mobile",
-    accent: "var(--color-primary)",
     image: quietStudySpacesImg,
   },
   {
@@ -81,7 +76,6 @@ export const projects: Project[] = [
     button: "View as Storyboard",
     icon: Figma,
     medium: "mobile",
-    accent: "var(--color-highlight)",
     image: figmaImg,
   },
   {
@@ -95,7 +89,6 @@ export const projects: Project[] = [
     icon: Map,
     medium: "web",
     urlLabel: "github.com/CrabbRex/IteractiveF1Map",
-    accent: "var(--color-accent-red)",
     image: f1Img,
   },
 ];
