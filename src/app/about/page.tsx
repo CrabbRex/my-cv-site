@@ -35,19 +35,26 @@ const about = () => {
           Contact Me:
         </h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          <div className="rounded-xl border border-[var(--color-line)] bg-[var(--color-pad)] p-5 shadow-[6px_6px_0_var(--color-oppositeBackground)]">
+          <a
+            href="mailto:Crabbrex@gmail.com"
+            className="group block cursor-pointer rounded-xl border border-[var(--color-line)] bg-[var(--color-pad)] p-5 shadow-[6px_6px_0_var(--color-oppositeBackground)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[8px_8px_0_var(--color-oppositeBackground)]"
+          >
             <p className="mb-1 text-xs opacity-60">Email</p>
-            <a
-              href="mailto:Crabbrex@gmail.com"
-              className="font-mono text-lg font-semibold hover:text-[var(--color-primary)]"
-            >
+            <p className="font-mono text-lg font-semibold transition-colors group-hover:text-[var(--color-primary)]">
               Crabbrex@gmail.com
-            </a>
-          </div>
-          <div className="rounded-xl border border-[var(--color-line)] bg-[var(--color-pad)] p-5 shadow-[6px_6px_0_var(--color-oppositeBackground)]">
-            <p className="mb-1 text-xs opacity-60">Phone</p>
-            <p className="font-mono text-lg font-semibold">0411 744 688</p>
-          </div>
+            </p>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rex-crabb-b94501404"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block cursor-pointer rounded-xl border border-[var(--color-line)] bg-[var(--color-pad)] p-5 shadow-[6px_6px_0_var(--color-oppositeBackground)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[8px_8px_0_var(--color-oppositeBackground)]"
+          >
+            <p className="mb-1 text-xs opacity-60">LinkedIn</p>
+            <p className="font-mono text-lg font-semibold transition-colors group-hover:text-[var(--color-primary)]">
+              Rex Crabb
+            </p>
+          </a>
         </div>
       </div>
     </main>

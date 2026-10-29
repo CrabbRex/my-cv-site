@@ -136,7 +136,7 @@ export default function ProjectsCarousel() {
                 onClick={() => api?.scrollTo(index)}
                 aria-label={`Go to ${project.title}`}
                 aria-current={index === selected}
-                className="h-2 rounded-full transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-foreground)] motion-reduce:transition-none"
+                className="h-2 cursor-pointer rounded-full transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-foreground)] motion-reduce:transition-none"
                 style={{
                   width: index === selected ? '1.75rem' : '0.5rem',
                   background: index === selected ? 'var(--color-highlight)' : 'var(--color-foreground)',
@@ -160,7 +160,7 @@ export default function ProjectsCarousel() {
               type="button"
               onClick={() => api?.scrollTo(index)}
               aria-current={isSelected}
-              className="grid w-full grid-cols-[40px_1fr_auto] items-center gap-4 border-b border-[var(--color-line)] px-2 py-3 text-left transition hover:bg-[var(--color-pad)]"
+              className="grid w-full cursor-pointer grid-cols-[40px_1fr_auto] items-center gap-4 border-b border-[var(--color-line)] px-2 py-3 text-left transition hover:bg-[var(--color-pad)]"
               style={{
                 backgroundColor: isSelected ? 'var(--color-pad)' : 'transparent',
               }}

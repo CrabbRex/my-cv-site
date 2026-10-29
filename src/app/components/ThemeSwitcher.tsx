@@ -4,7 +4,7 @@ import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 
 export default function ThemeSwitcher() {
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -49,15 +49,15 @@ export default function ThemeSwitcher() {
 
   return (
     <button
-      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="fixed bottom-4 right-4 top-auto left-auto md:top-4 md:right-4 md:bottom-auto md:left-auto z-50 p-2 rounded-3xl hover:opacity-80 transition"
+      onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+      className="fixed cursor-pointer bottom-4 right-4 top-auto left-auto md:top-4 md:right-4 md:bottom-auto md:left-auto z-50 p-2 rounded-3xl hover:opacity-80 transition"
       style={{
         backgroundColor: 'var(--color-oppositeBackground)',
         color: 'var(--color-background)',
       }}
       
     >
-      {theme === 'dark' ? sunIcon : moonIcon}
+      {resolvedTheme === 'dark' ? sunIcon : moonIcon}
     </button>
   );
 }
