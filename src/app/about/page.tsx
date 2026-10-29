@@ -4,38 +4,52 @@ import Image from 'next/image'
 
 const about = () => {
   return (
-    <main>
-      <h1 className="text-6xl md:text-8xl pt-44 font-bold mb-4 justify-center text-center">I&apos;m Rex</h1>
-      
-      <section className="pt-10 px-6 flex flex-col md:flex-row gap-12 text-center items-center justify-center md:text-left">
+    <main className="px-6 pb-20 pt-28">
+      <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-12 md:grid-cols-[1.2fr_0.8fr]">
         {/* Left */}
         <div>
+          <h1 className="mb-6 text-5xl font-bold md:text-6xl">I&apos;m Rex</h1>
+          <div className="space-y-5">
+            <p className="text-lg leading-relaxed opacity-80">I&apos;m an IT student at Macquarie University who&apos;s interested in Web Development and Software Development.</p>
+            <p className="text-lg leading-relaxed opacity-80">My personal hobbies include reading Science Fiction, Fantasy and Philosophy. I also enjoy exercising, guitar/rock music and AFL.</p>
+            <p className="text-lg leading-relaxed opacity-80">I have also really enjoy making small Game Development projects, mainly on PICO-8 and Love2D</p>
+          </div>
+        </div>
+
+        {/* Right */}
+        <div className="mx-auto w-full max-w-[300px]">
           <Image
             src="/about.jpg"
             alt="Rex Crabb"
             width={300}
             height={450}
-            className="rounded-2xl border border-[var(--color-line)] object-cover shadow-[6px_6px_0_var(--color-oppositeBackground)] transform transition-transform duration-300 hover:scale-105"
+            className="w-full rounded-2xl border border-[var(--color-line)] object-cover shadow-[6px_6px_0_var(--color-oppositeBackground)] transition-transform duration-300 hover:scale-105"
             priority
           />
         </div>
-        {/* Right */}
-        <div className="text-center md:text-left space-y-6 max-w-lg">
-          <p className="text-ld md:text-xl text-[var(--color-foreground)] leading-relaxed">I&apos;m an IT student at Macquarie University who&apos;s interested in Web Development and Software Development.</p>
-          <p className="text-ld md:text-xl text-[var(--color-foreground)] leading-relaxed">My personal hobbies include reading Science Fiction, Fantasy and Philosophy. I also enjoy exercising, guitar/rock music and AFL.</p>
-          <p className="text-ld md:text-xl text-[var(--color-foreground)] leading-relaxed">I have also really enjoy making small Game Development projects, mainly on PICO-8 and Love2D</p>
-        </div>
-      </section>
+      </div>
 
-      <h1 className="text-5xl pt-30 font-bold mb-4 justify-center text-center">Contact Me:</h1>
-      <section className="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center text-center pb-20 pt-10 px-4">
-        <div className="bg-[var(--color-pad)] hover:bg-[var(--color-pad-hover)] rounded-2xl shadow-md hover:shadow-lg transition duration-300 p-6 mt-5 flex flex-col justify-between">
-          <h2><a href="mailto:Crabbrex@gmail.com" className="hover:cursor-pointer hover:underline">Crabbrex@gmail.com</a></h2>
+      <div className="mx-auto mt-16 max-w-5xl border-t border-[var(--color-line)] pt-10">
+        <h2 className="mb-6 flex items-center gap-2 text-sm font-bold">
+          <span className="size-1.5 rounded-full bg-[var(--color-highlight)]" />
+          Contact Me:
+        </h2>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div className="rounded-xl border border-[var(--color-line)] bg-[var(--color-pad)] p-5 shadow-[6px_6px_0_var(--color-oppositeBackground)]">
+            <p className="mb-1 text-xs opacity-60">Email</p>
+            <a
+              href="mailto:Crabbrex@gmail.com"
+              className="font-mono text-lg font-semibold hover:text-[var(--color-primary)]"
+            >
+              Crabbrex@gmail.com
+            </a>
+          </div>
+          <div className="rounded-xl border border-[var(--color-line)] bg-[var(--color-pad)] p-5 shadow-[6px_6px_0_var(--color-oppositeBackground)]">
+            <p className="mb-1 text-xs opacity-60">Phone</p>
+            <p className="font-mono text-lg font-semibold">0411 744 688</p>
+          </div>
         </div>
-        <div className="bg-[var(--color-pad)] hover:bg-[var(--color-pad-hover)] rounded-2xl shadow-md hover:shadow-lg transition duration-300 p-6 mt-5 flex flex-col justify-between">
-          <h2>0411 744 688</h2>
-        </div>
-      </section>
+      </div>
     </main>
   )
 }

@@ -41,10 +41,15 @@
 }
 
 
+html,
 body {
   background-color: var(--color-background);
   background-image: radial-gradient(circle at 1px 1px, var(--color-line) 1px, transparent 1px);
   background-size: 22px 22px;
+  background-attachment: fixed;
+}
+
+body {
   color: var(--color-foreground);
 }
 
