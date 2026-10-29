@@ -228,3 +228,14 @@ export const timeline: [TimelineKind, Entry][] = [
   ["study", study[0]],
   ["study", study[1]],
 ];
+
+/** Sidebar menu. Ids match the section ids in CvSheet. */
+export const cvSections: { id: string; label: string; count?: number }[] = [
+  { id: "sx-about", label: "About me" },
+  { id: "sx-exp", label: "Experience", count: experience.length },
+  { id: "sx-proj", label: "Projects", count: projects.length },
+  { id: "sx-edu", label: "Education" },
+  { id: "sx-skills", label: "Skills" },
+  { id: "sx-str", label: "Strengths" },
+  { id: "sx-how", label: "How I work" },
+];
