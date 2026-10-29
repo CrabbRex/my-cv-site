@@ -1,6 +1,7 @@
 // File: src/app/cv/CvSheet.tsx
 import React from 'react';
 import { cn } from '@/lib/utils';
+import LinkSVG from '../components/LinkSVG';
 import {
   about,
   degree,
@@ -14,14 +15,14 @@ import {
   type Entry,
 } from './cv-data';
 
-// Small slate text (links, tech lists) uses --color-box-hover: plain --color-box is too
+// Small slate text (link icons, tech tags) uses --color-box-hover: plain --color-box is too
 // faint on the light sheet for text this size.
 const slateText = 'text-[var(--color-box-hover)]';
 const metaText = 'text-[13.5px] opacity-70';
 const monoLabel = 'font-mono text-[11px] uppercase tracking-[0.1em] opacity-70';
 
 const Section = ({ id, title, children }: { id: string; title: string; children: React.ReactNode }) => (
-  <section id={id} aria-labelledby={`${id}-heading`} className="scroll-mt-28 py-9 first:pt-7 last:pb-0">
+  <section id={id} aria-labelledby={`${id}-heading`} className="scroll-mt-28 py-9 first:pt-1 last:pb-0">
     <h2 id={`${id}-heading`} className="mb-5 text-2xl font-bold">
       {title}
     </h2>
@@ -34,30 +35,41 @@ const EntryRow = ({ entry }: { entry: Entry }) => (
   <div id={entry.id} className="grid scroll-mt-28 gap-x-7 gap-y-1.5 sm:grid-cols-[128px_minmax(0,1fr)]">
     <p className="font-mono text-[13px] tabular-nums opacity-70 sm:pt-0.5">{entry.long}</p>
     <div className="flex min-w-0 flex-col gap-1.5">
-      <h3 className="text-[17px] font-bold leading-snug">{entry.title}</h3>
-      <p className="text-sm">
-        {entry.href ? (
+      <div className="flex items-center gap-1.5">
+        <h3 className="text-[17px] font-bold leading-snug">{entry.title}</h3>
+        {entry.href && (
           <a
             href={entry.href}
             target="_blank"
             rel="noopener noreferrer"
-            className={cn(slateText, 'font-semibold underline-offset-4 hover:underline')}
+            aria-label={`${entry.title} on ${entry.linkLabel}`}
+            title={entry.linkLabel}
+            className={cn(slateText, 'inline-flex size-8 shrink-0 items-center justify-center rounded-md transition hover:bg-[var(--color-pad-hover)]')}
           >
-            {entry.linkLabel} ↗
+            <LinkSVG className="size-5" />
           </a>
-        ) : (
-          <span className="opacity-70">
-            {entry.org}
-            {entry.note && ` · ${entry.note}`}
-          </span>
         )}
-      </p>
+      </div>
+      {entry.org && (
+        <p className="text-sm opacity-70">
+          {entry.org}
+          {entry.note && ` · ${entry.note}`}
+        </p>
+      )}
       <ul className="list-disc space-y-1 pl-[18px]">
         {entry.points.map((point) => (
           <li key={point}>{point}</li>
         ))}
       </ul>
-      {entry.tags.length > 0 && <p className={cn('font-mono text-[12.5px]', slateText)}>{entry.tags.join(' · ')}</p>}
+      {entry.tags.length > 0 && (
+        <ul aria-label="Tech used" className="mt-1 flex flex-wrap gap-1.5">
+          {entry.tags.map((tag) => (
+            <li key={tag} className={cn('rounded-md bg-[var(--color-box)]/12 px-2 py-0.5 font-mono text-xs', slateText)}>
+              {tag}
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   </div>
 );
@@ -70,13 +82,12 @@ const EntryList = ({ entries }: { entries: Entry[] }) => (
   </div>
 );
 
+// No panel behind the sheet: the content sits straight on the fixed dot-grid background,
+// like the About and Projects pages, so the background stays still while the CV scrolls.
 const CvSheet = () => (
-  <article
-    aria-label="CV"
-    className="flex flex-col divide-y divide-[var(--color-line)] rounded-md border border-[var(--color-line)] bg-[var(--color-pad)] px-5 pb-10 text-[15px] leading-relaxed shadow-[8px_8px_0_var(--color-oppositeBackground)] sm:px-11"
-  >
+  <article aria-label="CV" className="flex min-w-0 flex-col divide-y divide-[var(--color-line)] text-[15px] leading-relaxed">
     <Section id="sx-about" title="About me">
-      <div className="max-w-[70ch] space-y-2.5">
+      <div className="space-y-2.5">
         {about.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
         ))}
