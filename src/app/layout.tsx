@@ -47,38 +47,34 @@ export default function RootLayout({
           </ActiveTabProvider>
         </ThemeProvider>
 
-        <footer>
-          <div className="max-w-5xl mx-auto px-6 py-4 text-center text-sm">
-            <p>© {new Date().getFullYear()} CrabbRex. All rights reserved.</p>
-            <p>
+        <footer className="mt-16 border-t border-[var(--color-line)]">
+          <div className="mx-auto flex max-w-5xl flex-col items-center gap-2 px-6 py-6 text-center font-mono text-xs tracking-wide">
+            <p className="opacity-70">© {new Date().getFullYear()} CrabbRex. All rights reserved.</p>
+            <p className="opacity-50">
               Built with{" "}
               <Link
                 href="https://nextjs.org"
-                className="text-blue-600 hover:underline"
+                className="text-[var(--color-box)] transition hover:text-[var(--color-box-hover)]"
                 target="_blank"
               >
                 Next.js
               </Link>{" "}
-              and{" "}
+              &{" "}
               <Link
                 href="https://tailwindcss.com"
-                className="text-blue-600 hover:underline"
+                className="text-[var(--color-box)] transition hover:text-[var(--color-box-hover)]"
                 target="_blank"
               >
                 Tailwind CSS
-              </Link>
-              .
-            </p>
-            <p>
-              Deployed with{" "}
+              </Link>{" "}
+              · Deployed with{" "}
               <Link
                 href="https://vercel.com"
-                className="text-blue-600 hover:underline"
+                className="text-[var(--color-box)] transition hover:text-[var(--color-box-hover)]"
                 target="_blank"
               >
                 Vercel
               </Link>
-              .
             </p>
           </div>
         </footer>

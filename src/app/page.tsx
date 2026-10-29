@@ -16,12 +16,12 @@ export default function Home() {
       </div>
       
     {/* Right Side - Photo */}
-      <Image 
+      <Image
         src="/Profile.jpg"
         alt="Rex Crabb"
         width={300}
         height={450}
-        className="rounded-2xl shadow-lg border-4 border-[var(--color-foreground)] object-cover mb-5"
+        className="rounded-2xl border border-[var(--color-line)] object-cover shadow-[6px_6px_0_var(--color-oppositeBackground)] mb-5"
         priority
       />
     </main>

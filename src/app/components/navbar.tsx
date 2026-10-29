@@ -16,7 +16,7 @@ export default function Navbar() {
     const { activeTab, setActiveTab } = useActiveTab();
     return (
         <header className="fixed top-0 left-0 w-full z-50 flex justify-center">
-            <div className="flex space-x-1 rounded-3xl px-4 py-2 mt-4 backdrop-blur-md">
+            <div className="flex space-x-1 rounded-2xl border border-[var(--color-line)] bg-[var(--color-pad)] px-2 py-1.5 mt-4 backdrop-blur-md">
                 {navLinks.map((link) => (
                     <Link
                         key={link.href}

@@ -11,14 +11,14 @@ export default function ActiveNavButtons() {
       <div className="flex flex-wrap gap-4">
         <Link
           href="/projects"
-          className="bg-blue-600 text-white px-6 py-2 rounded-xl hover:bg-blue-700 transition"
+          className="bg-[var(--color-oppositeBackground)] text-[var(--color-background)] px-6 py-2 rounded-xl font-semibold hover:opacity-85 transition"
           onClick={() => setActiveTab("/projects")}
         >
           Projects
         </Link>
         <Link
           href="/cv"
-          className="border-2 border-blue-600 text-blue-600 px-6 py-2 rounded-xl hover:bg-blue-600 hover:text-white transition"
+          className="border-[1.5px] border-[var(--color-foreground)] px-6 py-2 rounded-xl font-semibold hover:bg-[var(--color-foreground)] hover:text-[var(--color-background)] transition"
           onClick={() => setActiveTab("/cv")}
         >
           CV
@@ -27,7 +27,7 @@ export default function ActiveNavButtons() {
       <Link
         href="https://pomocd.org"
         target="_blank"
-        className="border-2 border-blue-600 text-blue-600 px-6 py-2 rounded-xl hover:bg-blue-600 hover:text-white transition"
+        className="border-[1.5px] border-[var(--color-foreground)] px-6 py-2 rounded-xl font-semibold hover:bg-[var(--color-foreground)] hover:text-[var(--color-background)] transition"
       >
         PomoCD
       </Link>
