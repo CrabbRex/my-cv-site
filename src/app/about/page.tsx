@@ -10,9 +10,10 @@ const about = () => {
         <div>
           <h1 className="mb-6 text-5xl font-bold md:text-6xl">I&apos;m Rex</h1>
           <div className="space-y-5">
-            <p className="text-lg leading-relaxed opacity-80">I&apos;m an IT student at Macquarie University who&apos;s interested in Web Development and Software Development.</p>
-            <p className="text-lg leading-relaxed opacity-80">My personal hobbies include reading Science Fiction, Fantasy and Philosophy. I also enjoy exercising, guitar/rock music and AFL.</p>
-            <p className="text-lg leading-relaxed opacity-80">I have also really enjoy making small Game Development projects, mainly on PICO-8 and Love2D</p>
+            <p className="text-lg leading-relaxed opacity-80">I&apos;m a final year IT student at Macquarie University in Sydney. I like building things people actually use, and at the moment that means freelancing on client websites while I finish my degree.</p>
+            <p className="text-lg leading-relaxed opacity-80">I read a lot of science fiction, fantasy and philosophy, and I enjoy writing too. I love to exercise, play guitar and AFL.</p>
+            <p className="text-lg leading-relaxed opacity-80">I code in my spare time too, usually just following whatever I&apos;m curious about. A lot of it is small web apps and tools for myself, like PomoCD, a study timer I built for my own study sessions.</p>
+            <p className="text-lg leading-relaxed opacity-80">Lately I&apos;ve been exploring artificial life and its connections to programming. I like that a handful of simple rules can produce something that evolves and looks alive, and it ties into the philosophy I read about what life actually is.</p>
           </div>
         </div>
 
