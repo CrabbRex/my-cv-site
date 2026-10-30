@@ -3,6 +3,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Download } from 'lucide-react';
+import { buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import CvSheet from './CvSheet';
 import CvSidebar from './CvSidebar';
@@ -52,7 +53,7 @@ const cv = async ({ searchParams }: { searchParams: Promise<{ view?: string | st
           <a
             href="/RexCrabbCV2026.pdf"
             download
-            className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-[var(--color-oppositeBackground)] px-5 font-semibold text-[var(--color-background)] transition hover:opacity-85"
+            className={cn(buttonVariants({ variant: 'pop', size: 'lg' }), 'h-11 rounded-xl text-base')}
           >
             <Download aria-hidden className="size-[18px]" />
             Download CV

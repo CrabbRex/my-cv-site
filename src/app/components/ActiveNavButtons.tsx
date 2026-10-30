@@ -1,7 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { useActiveTab } from "./ActiveTabContext";
+
+const popButton = cn(buttonVariants({ variant: "pop", size: "lg" }), "rounded-xl text-base");
 
 export default function ActiveNavButtons() {
   const { setActiveTab } = useActiveTab();
@@ -11,14 +15,14 @@ export default function ActiveNavButtons() {
       <div className="flex flex-wrap gap-4">
         <Link
           href="/projects"
-          className="bg-[var(--color-oppositeBackground)] text-[var(--color-background)] px-6 py-2 rounded-xl font-semibold hover:opacity-85 transition"
+          className={popButton}
           onClick={() => setActiveTab("/projects")}
         >
           Projects
         </Link>
         <Link
           href="/cv"
-          className="border-[1.5px] border-[var(--color-foreground)] px-6 py-2 rounded-xl font-semibold hover:bg-[var(--color-foreground)] hover:text-[var(--color-background)] transition"
+          className={popButton}
           onClick={() => setActiveTab("/cv")}
         >
           CV
@@ -27,7 +31,7 @@ export default function ActiveNavButtons() {
       <Link
         href="https://pomocd.org"
         target="_blank"
-        className="border-[1.5px] border-[var(--color-foreground)] px-6 py-2 rounded-xl font-semibold hover:bg-[var(--color-foreground)] hover:text-[var(--color-background)] transition"
+        className={popButton}
       >
         PomoCD
       </Link>

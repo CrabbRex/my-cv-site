@@ -21,7 +21,7 @@ export default function Home() {
         alt="Rex Crabb"
         width={300}
         height={450}
-        className="rounded-2xl border border-[var(--color-line)] object-cover shadow-[6px_6px_0_var(--color-oppositeBackground)] mb-5"
+        className="rounded-2xl border border-[var(--color-line)] object-cover shadow-[6px_6px_0_var(--color-oppositeBackground)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[8px_8px_0_var(--color-oppositeBackground)] motion-reduce:transform-none mb-5"
         priority
       />
     </main>

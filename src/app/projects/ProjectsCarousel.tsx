@@ -4,6 +4,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { Globe } from 'lucide-react';
+import { buttonVariants } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 import {
   Carousel,
   CarouselContent,
@@ -43,7 +45,7 @@ export default function ProjectsCarousel() {
 
             return (
               <CarouselItem key={project.title} className="pb-2 pr-2 sm:pr-3 md:pr-4">
-                <article className="flex h-full min-h-[420px] flex-col overflow-hidden rounded-2xl border border-[var(--color-line)] bg-[var(--color-pad)] text-[var(--color-foreground)] shadow-[6px_6px_0_var(--color-oppositeBackground)] md:flex-row">
+                <article className="flex h-full min-h-[420px] flex-col overflow-hidden rounded-2xl border border-[var(--color-line)] bg-[var(--color-pad)] text-[var(--color-foreground)] shadow-[6px_6px_0_var(--color-oppositeBackground)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[8px_8px_0_var(--color-oppositeBackground)] motion-reduce:transform-none md:flex-row">
                   {/* Screenshot, framed by the medium the project shipped to */}
                   <div className="flex w-full shrink-0 items-center justify-center border-b border-[var(--color-line)] p-4 sm:p-6 md:w-[45%] md:border-b-0 md:border-r md:p-8">
                     {project.image ? (
@@ -98,7 +100,7 @@ export default function ProjectsCarousel() {
                         <Link
                           href={project.liveLink}
                           target="_blank"
-                          className="inline-flex w-fit items-center gap-2 rounded-full bg-[var(--color-foreground)] px-4 py-2 text-sm font-semibold text-[var(--color-background)] transition hover:opacity-85 motion-reduce:transition-none"
+                          className={cn(buttonVariants({ variant: "pop" }), "w-fit rounded-xl")}
                         >
                           <Globe className="size-4" strokeWidth={2} />
                           {project.liveButton ?? "Open live site"}
@@ -107,7 +109,7 @@ export default function ProjectsCarousel() {
                       <Link
                         href={project.link}
                         target="_blank"
-                        className="inline-flex w-fit items-center gap-2 rounded-full border-[1.5px] border-[var(--color-foreground)] px-4 py-2 text-sm font-semibold transition hover:bg-[var(--color-foreground)] hover:text-[var(--color-background)] motion-reduce:transition-none"
+                        className={cn(buttonVariants({ variant: "pop" }), "w-fit rounded-xl")}
                       >
                         <Icon className="size-4" strokeWidth={2} />
                         {project.button}

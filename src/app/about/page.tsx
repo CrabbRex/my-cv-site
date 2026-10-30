@@ -23,7 +23,7 @@ const about = () => {
             alt="Rex Crabb"
             width={300}
             height={450}
-            className="w-full rounded-2xl border border-[var(--color-line)] object-cover shadow-[6px_6px_0_var(--color-oppositeBackground)] transition-transform duration-300 hover:scale-105"
+            className="w-full rounded-2xl border border-[var(--color-line)] object-cover shadow-[6px_6px_0_var(--color-oppositeBackground)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[8px_8px_0_var(--color-oppositeBackground)] motion-reduce:transform-none"
             priority
           />
         </div>

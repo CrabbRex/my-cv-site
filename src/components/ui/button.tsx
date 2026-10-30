@@ -19,6 +19,8 @@ const buttonVariants = cva(
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
+        // The site's standard button, matching the About page contact cards: lifts on hover, presses on click.
+        pop: "border border-[var(--color-line)] bg-[var(--color-pad)] font-semibold text-[var(--color-foreground)] shadow-[4px_4px_0_var(--color-oppositeBackground)] hover:-translate-y-0.5 hover:bg-[var(--color-pad-hover)] hover:shadow-[6px_6px_0_var(--color-oppositeBackground)] active:translate-y-0 active:shadow-[2px_2px_0_var(--color-oppositeBackground)] motion-reduce:transform-none",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
