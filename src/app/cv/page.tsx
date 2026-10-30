@@ -6,7 +6,7 @@ import { Download } from 'lucide-react';
 import { buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import CvSheet from './CvSheet';
-import CvSidebar from './CvSidebar';
+import CvSidebar, { CvHeading } from './CvSidebar';
 import CvTimeline from './CvTimeline';
 
 export const metadata: Metadata = {
@@ -28,10 +28,17 @@ const cv = async ({ searchParams }: { searchParams: Promise<{ view?: string | st
   return (
     <main className="px-4 pb-20 pt-28 sm:px-6">
       <div className="mx-auto flex max-w-6xl flex-col gap-6">
-        <div className="flex flex-wrap items-center justify-between gap-3">
+        {/* Phones: name first, then the switch. From md up the name lives in the sidebar. */}
+        {current === 'cv' && (
+          <div className="md:hidden">
+            <CvHeading />
+          </div>
+        )}
+
+        <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
           <nav
             aria-label="CV view"
-            className="inline-flex gap-1 rounded-[14px] border border-[var(--color-line)] bg-[var(--color-pad)] p-1"
+            className="flex gap-1 rounded-[14px] border border-[var(--color-line)] bg-[var(--color-pad)] p-1 sm:inline-flex"
           >
             {views.map(({ id, label, href }) => (
               <Link
@@ -40,7 +47,7 @@ const cv = async ({ searchParams }: { searchParams: Promise<{ view?: string | st
                 scroll={false}
                 aria-current={current === id ? 'page' : undefined}
                 className={cn(
-                  'inline-flex min-h-11 items-center rounded-[10px] px-5 font-semibold transition-colors',
+                  'inline-flex min-h-11 flex-1 items-center justify-center rounded-[10px] px-5 font-semibold transition-colors sm:flex-none',
                   current === id
                     ? 'bg-[var(--color-oppositeBackground)] text-[var(--color-background)]'
                     : 'hover:bg-[var(--color-pad-hover)]'
@@ -53,7 +60,7 @@ const cv = async ({ searchParams }: { searchParams: Promise<{ view?: string | st
           <a
             href="/RexCrabbCV2026.pdf"
             download
-            className={cn(buttonVariants({ variant: 'pop', size: 'lg' }), 'h-11 rounded-xl text-base')}
+            className={cn(buttonVariants({ variant: 'pop', size: 'lg' }), 'h-11 w-full rounded-xl text-base sm:w-auto')}
           >
             <Download aria-hidden className="size-[18px]" />
             Download CV
@@ -65,7 +72,7 @@ const cv = async ({ searchParams }: { searchParams: Promise<{ view?: string | st
             <CvTimeline />
           </div>
         ) : (
-          <div className="grid items-start gap-5 md:grid-cols-[250px_minmax(0,1fr)] md:gap-9">
+          <div className="grid grid-cols-[minmax(0,1fr)] items-start gap-8 md:grid-cols-[250px_minmax(0,1fr)] md:gap-9">
             <CvSidebar />
             <CvSheet />
           </div>

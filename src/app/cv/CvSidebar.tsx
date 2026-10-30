@@ -3,14 +3,24 @@ import React from 'react';
 import { contact, role } from './cv-data';
 import CvSectionNav from './CvSectionNav';
 
+export const CvHeading = () => (
+  <div>
+    <h1 className="text-4xl font-bold leading-tight md:text-[40px]">Rex Crabb</h1>
+    <p className="mt-2.5 font-mono text-xs font-semibold uppercase tracking-[0.12em] opacity-70">{role}</p>
+  </div>
+);
+
 const CvSidebar = () => (
   <aside className="flex min-w-0 flex-col gap-7 md:sticky md:top-24">
-    <div>
-      <h1 className="text-4xl font-bold leading-tight md:text-[40px]">Rex Crabb</h1>
-      <p className="mt-2.5 font-mono text-xs font-semibold uppercase tracking-[0.12em] opacity-70">{role}</p>
+    {/* On phones the name is shown above the CV/Timeline switch instead (see CvHeading in page.tsx),
+        and the section menu is dropped: the sections already read top to bottom. */}
+    <div className="hidden md:block">
+      <CvHeading />
     </div>
 
-    <CvSectionNav />
+    <div className="hidden md:block">
+      <CvSectionNav />
+    </div>
 
     <div>
       <h2 className="mb-1.5 font-mono text-[11px] font-semibold uppercase tracking-[0.12em] opacity-70">Contact</h2>

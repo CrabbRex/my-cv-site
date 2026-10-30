@@ -22,7 +22,7 @@ const metaText = 'text-[13.5px] opacity-70';
 const monoLabel = 'font-mono text-[11px] uppercase tracking-[0.1em] opacity-70';
 
 const Section = ({ id, title, children }: { id: string; title: string; children: React.ReactNode }) => (
-  <section id={id} aria-labelledby={`${id}-heading`} className="scroll-mt-28 py-9 first:pt-1 last:pb-0">
+  <section id={id} aria-labelledby={`${id}-heading`} className="scroll-mt-28 py-7 first:pt-1 last:pb-0 md:py-9">
     <h2 id={`${id}-heading`} className="mb-5 text-2xl font-bold">
       {title}
     </h2>
