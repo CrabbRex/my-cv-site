@@ -27,7 +27,7 @@ export function BrowserFrame({ image, alt, urlLabel, priority }: DeviceFrameProp
       </div>
       {urlLabel && (
         <div className="mt-2 flex min-w-0 items-center gap-2 px-1 font-mono text-[11px] opacity-70">
-          <span className="size-1.5 shrink-0 rounded-full bg-[var(--color-primary)]" />
+          <span className="size-1.5 shrink-0 rounded-full bg-[var(--color-box)]" />
           <span className="truncate">{urlLabel}</span>
         </div>
       )}

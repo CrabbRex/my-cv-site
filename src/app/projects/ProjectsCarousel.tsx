@@ -81,7 +81,7 @@ export default function ProjectsCarousel() {
                         {tech.map((item) => (
                           <li
                             key={item}
-                            className="rounded-md border border-[var(--color-line)] px-2.5 py-1 text-xs text-[var(--color-box)]"
+                            className="rounded-md border border-[var(--color-line)] px-2.5 py-1 text-xs text-[var(--color-box-hover)]"
                           >
                             {item}
                           </li>
@@ -124,7 +124,7 @@ export default function ProjectsCarousel() {
         <div className="mt-6 flex items-center justify-center gap-3 md:gap-4">
           <CarouselPrevious className="static translate-y-0 border-[var(--color-line)] bg-[var(--color-pad)] text-[var(--color-foreground)] hover:bg-[var(--color-pad-hover)]" />
 
-          <span className="font-mono text-xs tabular-nums tracking-[0.18em] text-[var(--color-highlight)]">
+          <span className="font-mono text-xs tabular-nums tracking-[0.18em] text-[var(--color-box-hover)]">
             {String(selected + 1).padStart(2, '0')} / {String(projects.length).padStart(2, '0')}
           </span>
 
@@ -139,7 +139,7 @@ export default function ProjectsCarousel() {
                 className="h-2 cursor-pointer rounded-full transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-foreground)] motion-reduce:transition-none"
                 style={{
                   width: index === selected ? '1.75rem' : '0.5rem',
-                  background: index === selected ? 'var(--color-highlight)' : 'var(--color-foreground)',
+                  background: index === selected ? 'var(--color-box)' : 'var(--color-foreground)',
                   opacity: index === selected ? 1 : 0.25,
                 }}
               />
@@ -167,13 +167,13 @@ export default function ProjectsCarousel() {
             >
               <span
                 className={`font-mono text-sm font-semibold ${
-                  isSelected ? 'text-[var(--color-highlight)]' : 'text-[var(--color-foreground)] opacity-50'
+                  isSelected ? 'text-[var(--color-box-hover)]' : 'text-[var(--color-foreground)] opacity-50'
                 }`}
               >
                 {String(index + 1).padStart(2, '0')}
               </span>
               <span className="truncate text-sm font-medium">{project.title}</span>
-              <span className="rounded-md border border-[var(--color-line)] px-2.5 py-1 text-[11px] text-[var(--color-box)]">
+              <span className="rounded-md border border-[var(--color-line)] px-2.5 py-1 text-[11px] text-[var(--color-box-hover)]">
                 {project.medium === 'web' ? 'Web' : 'Mobile'}
               </span>
             </button>

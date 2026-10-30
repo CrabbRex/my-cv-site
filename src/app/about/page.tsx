@@ -31,7 +31,7 @@ const about = () => {
 
       <div className="mx-auto mt-16 max-w-5xl border-t border-[var(--color-line)] pt-10">
         <h2 className="mb-6 flex items-center gap-2 text-sm font-bold">
-          <span className="size-1.5 rounded-full bg-[var(--color-highlight)]" />
+          <span className="size-1.5 rounded-full bg-[var(--color-box)]" />
           Contact Me:
         </h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -40,7 +40,7 @@ const about = () => {
             className="group block cursor-pointer rounded-xl border border-[var(--color-line)] bg-[var(--color-pad)] p-5 shadow-[6px_6px_0_var(--color-oppositeBackground)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[8px_8px_0_var(--color-oppositeBackground)]"
           >
             <p className="mb-1 text-xs opacity-60">Email</p>
-            <p className="font-mono text-lg font-semibold transition-colors group-hover:text-[var(--color-primary)]">
+            <p className="font-mono text-lg font-semibold transition-colors group-hover:text-[var(--color-box-hover)]">
               Crabbrex@gmail.com
             </p>
           </a>
@@ -51,7 +51,7 @@ const about = () => {
             className="group block cursor-pointer rounded-xl border border-[var(--color-line)] bg-[var(--color-pad)] p-5 shadow-[6px_6px_0_var(--color-oppositeBackground)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[8px_8px_0_var(--color-oppositeBackground)]"
           >
             <p className="mb-1 text-xs opacity-60">LinkedIn</p>
-            <p className="font-mono text-lg font-semibold transition-colors group-hover:text-[var(--color-primary)]">
+            <p className="font-mono text-lg font-semibold transition-colors group-hover:text-[var(--color-box-hover)]">
               Rex Crabb
             </p>
           </a>
