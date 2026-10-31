@@ -9,8 +9,8 @@ export default function Home() {
       <div className="max-w-xl md:text-left">
         <h1 className="text-5xl font-bold mb-4">Hello, I&apos;m Rex Crabb</h1>
         <p className="text-xl">
-          I am a motivated and resilient Information Technology student with a strong academic record and
-          growing portfolio of personal and academic web development projects.
+          I&apos;m a web and software developer in Sydney. I&apos;m finishing my IT degree at Macquarie University
+          and building websites for freelance clients.
         </p>
         <ActiveNavButtons />
       </div>
