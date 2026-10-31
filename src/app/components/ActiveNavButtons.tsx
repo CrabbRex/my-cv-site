@@ -31,6 +31,7 @@ export default function ActiveNavButtons() {
       <Link
         href="https://pomocd.org"
         target="_blank"
+        rel="noopener"
         className={popButton}
       >
         PomoCD
