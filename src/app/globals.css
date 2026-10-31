@@ -2,8 +2,9 @@
 @import "tailwindcss";
 
 :root {
-  /* Nameplate palette — moss (accents/labels), moss-deep (fills), amber
-     (indicators/numbers), slate/box (cool accent: links, tech tags) */
+  /* Nameplate palette. Slate (--color-box, plus --color-box-hover for small text and
+     hover) is the site's single accent: links, tags, indicators, selected states.
+     Moss (primary/secondary) and amber (highlight) are no longer used in components. */
   --color-primary: #4f7a27;
   --color-secondary: #22360f;
   --color-highlight: #d99a1f;

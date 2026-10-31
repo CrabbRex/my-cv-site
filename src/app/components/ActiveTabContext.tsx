@@ -1,5 +1,6 @@
 "use client"
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 type ActiveTabContextType = {
     activeTab: string;
@@ -8,8 +9,17 @@ type ActiveTabContextType = {
 
 const ActiveTabContext = createContext<ActiveTabContextType | undefined>(undefined);
 
+// Nav tabs are top-level routes, so /projects/foo lights up /projects.
+const tabForPath = (pathname: string) => "/" + (pathname.split("/")[1] ?? "");
+
 export const ActiveTabProvider = ({ children }: { children: React.ReactNode }) => {
-    const [activeTab, setActiveTab] = useState('/');
+    const pathname = usePathname();
+    const [activeTab, setActiveTab] = useState(() => tabForPath(pathname));
+
+    // Clicks set the tab straight away for the animation; this keeps it right on direct loads and back/forward.
+    useEffect(() => {
+        setActiveTab(tabForPath(pathname));
+    }, [pathname]);
 
     return (
         <ActiveTabContext.Provider value={{ activeTab, setActiveTab }}>
